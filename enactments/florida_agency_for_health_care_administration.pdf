@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+    <title>
+    House Bill 1175 (2016) - The Florida Senate
+</title>
+    <link href="/Content/css/styles.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/Content/css/print.css" rel="stylesheet" type="text/css" media="print" />
+    
+    <link href="/Areas/Session/css/billdetails.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+
+    <!--[if lt IE 9]>
+            <script src="/Scripts/html5.js"></script>
+        <![endif]-->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+          <link rel="stylesheet" href="/Content/css/ie.css" />
+        <![endif]-->
+</head>
+<body>
+
+    <!-- Transparent image to track how many users have JavaScript disabled -->
+    <noscript><img src="/usercontent/img/icons/TransparentDot.gif" /></noscript>
+
+    <script src="/Scripts/jquery-1.8.2.js"></script>
+<script src="/Scripts/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<script src="/Scripts/jquery.colorbox-min.js"></script>
+<script src="/Scripts/jquery.placeholder.js"></script>
+<script src="/Scripts/PhotoViewer.js"></script>
+<script src="/Scripts/Tracker.js"></script>
+
+    <!--[if lt IE 8]>
+        <p class="chromeframe">If you are using IE 8/9 click the "Compatibility View" icon <img src="/Content/img/icons/IEcompatibility.png" alt="IE Compatibility View Icon" /> to switch out of quirks mode.<br>If you are using an <strong>outdated</strong> browser (IE 7). Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+        </p>
+
+    <![endif]-->
+    <!-- Htop: begin -->
+
+    <p id="skip"><a href="#menu">Skip to Navigation</a> | <a href="#main">Skip to Main Content</a> | <a href="#footer">Skip to Site Map</a></p>
+    <div id="htop" class="grid-100 grid-parent clearfix">
+        <p class="grid-50"><a href="http://www.myfloridahouse.gov/" id="myFloridaHouseLink">MyFloridaHouse.gov</a> | <a href="http://archive.flsenate.gov">Flsenate.gov Archives</a> | <a class="GAMobile" href="/MobileSite">Mobile Site</a></p>
+            <p class="grid-50 righttext">Senate Tracker: <a href="/Tracker/Signup">Sign Up</a> | <a href="/Tracker/Login">Login</a> </p>
+
+    </div>
+    <!-- Htop: end -->    
+    <!-- Watch Session: end -->
+    <div class="grid-container">
+        <div class="grid-100">
+            <div class="header-container">
+                <!-- Search box: begin -->
+
+                <div id="searchbox">
+                    <!--Go to Bill-->
+                    <form action="/Session/Bill" method="post" class="form-inline">
+                        <input name="__RequestVerificationToken" type="hidden" value="J_89FeDJQEGis8XOkzB6ltjBljh-cuPnyWsQKfhYts5wKpGBQ9Dgp-rl6mnSaQzhkI_zY0yTD7I-hnX3RjKDlpGgKcNvxPK2a80nPjyIZ3c1" />
+                        <span>
+                            <label for="BillNumber">Go to Bill:</label>
+                        </span>
+                        <input type="search" class="input-mini-em" name="BillNumber" placeholder="Bill #">
+                        <label class="print" for="billYear">Year:</label>
+                        <select name="SessionYear" id="billYear">
+                                        <option value="2019" >2019</option>        
+            <option value="2018O" >2018O</option>        
+            <option value="2018" >2018</option>        
+            <option value="2017A" >2017A</option>        
+            <option value="2017" >2017</option>        
+            <option value="2016O" >2016O</option>        
+            <option value="2016" selected="selected" >2016</option>    
+            <option value="2015C" >2015C</option>        
+            <option value="2015B" >2015B</option>        
+            <option value="2015A" >2015A</option>        
+            <option value="2015" >2015</option>        
+            <option value="2014O" >2014O</option>        
+            <option value="2014A" >2014A</option>        
+            <option value="2014" >2014</option>        
+            <option value="2013" >2013</option>        
+            <option value="2012O" >2012O</option>        
+            <option value="2012B" >2012B</option>        
+            <option value="2012" >2012</option>        
+            <option value="2011" >2011</option>        
+            <option value="2010A" >2010A</option>        
+            <option value="2010O" >2010O</option>        
+
+                        </select>
+                        <input type="hidden" name="FromGoToBill" value="True" />
+                        <input type="submit" value="Go" class="blue button round">
+                    </form>
+                    <input type="hidden" id="DefaultSessionYear" value="" /> 
+                    <!-- Search Statutes -->
+                    <form action="/Laws/Statutes" method="post" class="form-inline statuebox">
+                        <input name="__RequestVerificationToken" type="hidden" value="lNXxrgvIbG0gsyjueQfxpXM1TTSKsMPPk1EkhmrBNEMW-OJqcVGCuSp63EFOj_eT_U1vRYsamiT4C9-8UBkLoX1YCO7cLH2EvHPjwYABOGg1" />
+                        <span>Find Statutes:</span>
+                        <label class="print" for="statuteYear">Year:</label>
+                        <select name="StatuteYear" id="statuteYear">
+        <option value="2018" selected="selected">2018</option>
+        <option value="2017">2017</option>
+        <option value="2016">2016</option>
+        <option value="2015">2015</option>
+        <option value="2014">2014</option>
+        <option value="2013">2013</option>
+        <option value="2012">2012</option>
+        <option value="2011">2011</option>
+        <option value="2010">2010</option>
+
+
+
+
+
+                        </select>
+                        <input type="search" name="StatuteSearchQuery" class="input-small-em" placeholder="Search Term">
+                        <label class="print" for="statuteChap">Within Chapter:</label>
+                        <input type="search" name="GoToChapter" id="statuteChap" class="input-mini-em" placeholder="Chapter">
+                        <input type="submit" value="Find" class="blue button round">
+                    </form>
+
+                    <!--Search Flsenate.gov-->
+                    <form accept-charset="utf-8" action="/search/results" class="form-inline" method="get">
+                        <input type="search" autocomplete="off" class="input-medium-em" name="q" title="search" id="searchQuery" placeholder="Search Site">
+                        <input type="submit" value="Search" class="blue button round">
+                    </form>
+                </div>
+                <noscript>
+                    <p class="right centertext redtext mar-bot0 width50" style="margin-top:3em;">Javascript must be enabled for site search.</p>
+                </noscript>
+                <!-- Search box: end -->
+                <header class="wrapper clearfix">
+                    <h1 class="print">The Florida Senate</h1>
+                    <div id="logo"><a href="/" class="logo sealsImg"></a></div>
+
+                    <!-- Menu:start -->
+                    <nav>
+                        <ul id="menu">
+                            <li class="first">
+                                <a href="/" class="drop">Home</a>
+                                <div class="dropdown_2columns">
+                                    <div class="col_2">
+                                        <h2>Daily Digest</h2>
+                                    </div>
+                                    <div class="col_1">
+                                        <p><a class="GACalendarMenu" href="/?Tab=Calendar">Calendar</a></p>
+                                            <p><a class="GACalendarMenu" href="/?Tab=SenateFloor">Senate Floor</a></p>
+                                    </div>
+                                    <div class="col_1">
+
+                                        <p><a class="GACalendarMenu" href="/?Tab=FiledToday">Filed Today</a></p>
+                                        <p><a class="GACalendarMenu" href="/?Tab=BillActions">Bill Actions</a></p>
+                                    </div>
+                                    <div id="spotlightsMenu" class="col_2">
+                                        <h2>Spotlights</h2>
+                                                <ol>
+                        <li><a class="GASlideMenuLink" href="http://www.flsenate.gov/Session/Appropriations/2019">2019-2020 Budget</a></li>
+                        <li><a class="GASlideMenuLink" href="http://www.flsenate.gov/Media/PressReleases/Show/3089">Hurricane Michael Recovery</a></li>
+                            <li>The 2019 Legislative Session</li>
+                            <li>2018 Florida Statutes</li>
+                        <li><a class="GASlideMenuLink" href="http://www.flsenate.gov/PublishedContent/ADMINISTRATIVEPUBLICATIONS/2018-2020_SENATERULESANDMANUAL.pdf">Senate Rules</a></li>
+       </ol>
+
+
+
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="/Senators" class="drop">Senators</a>
+                                <div class="dropdown_1column">
+                                    <div class="col_1">
+                                        <p><a href="/Senators/#Senators">Senator List</a></p>
+                                        <p><a href="/Senators/Find">Find Your Legislators</a></p>
+                                        <p><a href="/Senators/Districts">District Maps</a></p>
+                                        <p><a href="/Senators/VoteDisclosures">Vote Disclosures</a></p>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <a href="/Committees" class="drop">Committees</a>
+                                <div class="dropdown_1column">
+                                    <div class="col_1">
+                                        <p><a href="/Committees/#com-list">Committee List</a></p>
+                                        <p>
+                                            <a href="/Committees/Publications">
+                                                Committee<br />
+                                                Publications
+                                            </a>
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+
+                            </li>
+
+
+                            <li>
+                                <a href="/Session" class="drop">Session</a>
+                                <div class="dropdown_3columns">
+                                    <div class="col_1">
+                                        <p><a href="/Session/Bills">Bills</a></p>
+                                        <p><a href="/Session/Calendars">Calendars</a></p>
+                                        <p><a href="/Session/Journals">Journals</a></p>
+                                    </div>
+                                    <div class="col_1">
+                                        <p><a href="/Session/Appropriations">Appropriations</a></p>
+                                        <p><a href="/Session/Conferences">Conferences</a></p>
+                                        <p><a href="/Session/Reports">Reports</a></p>
+                                    </div>
+                                    <div class="col_1">
+                                        <p><a href="/Session/ExecutiveAppointments">Executive Appointments</a></p>
+                                        <p><a href="/Session/ExecutiveSuspensions">Executive Suspensions</a></p>
+                                        <p><a href="/Session/Redistricting">Redistricting</a></p>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <a href="/Laws" class="drop">Laws</a>
+                                <div class="dropdown_2columns">
+                                    <div class="col_1">
+                                        <p><a href="/Laws/Statutes">Statutes</a></p>
+                                        <p>
+                                            <a href="/Search/StatuteSearchTips">
+                                                Help Searching<br>
+                                                Statutes
+                                            </a>
+                                        </p>
+                                        <p><a href="/Laws/Constitution">Constitution</a></p>
+                                    </div>
+                                    <div class="col_1">
+                                        <p><a href="http://laws.flrules.org/">Laws of Florida <span class="newWindowIco16 commonIco"></span></a></p>
+                                        <p><a href="http://www.leg.state.fl.us/cgi-bin/View_Page.pl?Tab=info_center&Submenu=2&File=index.html&Directory=portal/legistore/&Location=app">Order - Legistore <span class="newWindowIco16 commonIco"></span></a></p>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <a href="/Media" class="drop">Media</a>
+                                <div class="dropdown_2columns">
+                                    <div class="col_1">
+                                        <p>
+                                            <a href="/Media/VideoSchedule">
+                                                Video Broadcast<br>
+                                                Schedule
+                                            </a>
+                                        </p>
+                                        <p><a href="/Media/PressReleases">Press Releases</a></p>
+                                        <p><a href="/Media/Publications">Publications</a></p>
+                                    </div>
+                                    <div class="col_1">
+                                        <p><a href="/Media/Videos">Videos</a></p>
+                                        <p><a href="/Media/Topics">Topics</a></p>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <a href="/About" class="drop">About</a>
+                                <div class="dropdown_2columns">
+                                    <div class="col_1">
+                                        <p>
+                                            <a href="http://archive.flsenate.gov/cgi-bin/View_Page.pl?Mode=Archives&Tab=info_center&submenu=7&File=index.cfm&Directory=Info_Center/Archive/&Location=app">
+                                                Historical<br />
+                                                Information  <span class="newWindowIco16 commonIco"></span>
+                                            </a>
+                                        </p>
+                                       
+                                        <p><a href="/About/Accessibility">Accessibility</a></p>
+                                    </div>
+                                    <div class="col_1">
+                                        <p><a href="/About/Visit">Visit Us</a> </p>
+                                        <p><a href="/About/Contact">Contact Us</a></p>
+                                        <p><a href="/About/PageProgram">Page Program</a></p>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a href="/Offices" class="drop">Offices</a>
+                                <div class="dropdown_2columns align_right">
+                                    <div class="col_1">
+                                        <p><a href="/Offices/President">President's Office </a></p>
+                                        <p><a href="/Offices/Majority">Majority Office</a></p>
+                                    </div>
+                                    <div class="col_1">
+                                        <p><a href="/Offices/Minority">Minority Office</a></p>
+                                        <p><a href="/Offices/Secretary">Secretary's Office </a></p>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+                                <a href="/Reference" class="drop">Reference</a>
+                                <div class="dropdown_2columns align_right">
+                                    <div class="col_1">
+                                        <p><a href="/Reference/Glossary">Glossary</a></p>
+                                        <p><a href="/Reference/FAQ">FAQ</a></p>
+                                        <p><a href="/Reference/Help">Help</a></p>
+                                        <p><a href="/Search/SiteSearchTips">Site Search Tips</a></p>
+                                        <p><a href="/Reference/Publications">Publications</a></p>
+                                    </div>
+                                    <div class="col_1">
+                                        <p><a href="/Reference/Links">Links</a></p>
+                                        <p><a href="http://archive.flsenate.gov">Archives <span class="newWindowIco16 commonIco"></span></a></p>
+                                        <p><a href="/Reference/AdvisoryOpinions">Advisory Opinions</a></p>
+                                        <p><a href="/Reference/PublicRecords">Public Records</a></p>
+                                    </div>
+                                </div>
+
+                            </li>
+                            
+                            <li class="last">
+                                <a href="/Tracker">Tracker</a>
+                                <div class="dropdown_1column align_right">
+                                    <div class="col_1">
+
+                                            <p><a href="/Tracker/Login">Login</a></p>
+                                            <p><a href="/Tracker/Signup">Sign Up</a></p>
+                                        <p><a href="/Tracker/Help">Tracker Help</a></p>
+                                    </div>
+                                </div>
+
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                    <!-- Menu:end -->
+                </header>
+            </div>
+            <div id="main" class="grid-100">
+                <div class="main wrapper clearfix">
+                    
+
+
+                    
+    <div id="breadcrumbs">
+        <a href="/">Home</a> &gt; <a href="/Session">Session</a> &gt; <a href="/Session/Bills/2016">2016</a> &gt; House Bill 1175
+    </div>
+
+                    
+
+
+<div class="grid-100">
+    
+
+<div id="prevNextBillNav" class="rounded">
+    <ul class="inline">
+            <li id="prevBill"><a href="/Session/Bill/2016/1173/Category" id="prevBillLink" class="left">&lt; Previous House Bill</a></li>
+                    <li id="nextBill" class="right "><a href="/Session/Bill/2016/1177/Category" id="nextBillLink">Next House Bill &gt;</a> </li>
+    </ul>
+    </div>  <span class="clear"></span>
+
+    <div class="right mar1em-bot mar2em-left">
+        
+            <p class="imgBtn"><a href="/Tracker/Track?key=1_20031" id="trackerLink"><span class="trackIco32 commonIco middle pad-right-half-em"></span>Track This Bill</a></p>
+                    <p class="pad-top-half-em noPrint"><a class="blue button buttonBig rounded" style="padding: .5em 4.1em;" href="/Committees/BillSummaries/2016/html/1385">View Bill Summary</a></p>  
+        <p  class="pad-top-half-em noPrint"><a class="blue button buttonBig rounded " href="/Reference/Glossary/">Glossary of Legislative Terms</a></p>
+
+              
+    </div>
+    <h2>CS/CS/HB 1175: Transparency in Health Care</h2>
+
+    <!--<p class="italic">Introduced by <a href="*">Senate Ethics and Elections</a> as <a href="*">SPB 7008</a> </p>-->
+
+    <p>GENERAL BILL by 
+Health and Human Services Committee            ; 
+Health Care Appropriations Subcommittee            ; 
+Sprowls            ; 
+            (CO-INTRODUCERS) 
+Avila            ; 
+Renner                   
+    <p class="width80">
+        <span>Transparency in Health Care;</span> Requiring a facility licensed under ch. 395, F.S., to provide timely and accurate financial information and quality of service measures to certain individuals; requiring a health care practitioner to provide a patient upon his or her request a written or electronic good faith estimate of anticipated charges within a certain timeframe; requiring a health insurer to make available on its website certain methods that a policyholder can use to make estimates of certain costs and charges; revising a requirement that a health maintenance organization make certain information available to its subscribers, etc.
+             APPROPRIATION:
+            
+$4,052,919.00            
+    </p>   
+    <div id="snapshot" class="grid-100 top">
+        
+        <div class="grid-60 top pad-left0">
+            
+                <span class="bold">Effective Date:</span>   7/1/2016 <br>
+                            <span class="bold">Last Action:</span>  	
+                4/14/2016 
+                     - 
+                        Chapter No. <a href="http://laws.flrules.org/2016/234" target="_blank">2016-234</a>, companion bill(s) passed, see <a href="/Session/Bill/2016/221">CS/CS/CS/HB 221</a> (Ch. <a href="http://laws.flrules.org/2016/222" target="_blank">2016-222</a>)<br>
+                                <span class="bold">Location:</span> Became Law<br>
+
+            <span class="bold">Bill Text:</span>	<a href="/Session/Bill/2016/1175/BillText/er/PDF" target="_blank" class="lnk_BillTextPDF" data-sessionYear="2016" data-chamber="House">PDF</a>
+            <br>
+        </div>
+        
+
+        <div class="grid-40 top">
+            
+            
+                <!--<li><a href="*">Senate Governmental Oversight and Accountability</a> - 02/06/2013 Favorable with Committee Substitute; <a href="*">YEAS 8 NAYS 0</a>  <span class="filetype">(pdf)</span>  </li>
+                <li><a href="*">Senate Rules</a> - 02/19/2013 Favorable; <a href="*">YEAS 13 NAYS 0</a>  <span class="filetype">(pdf)</span> </li>
+                <span class="inCommittee" title="Current Committee Location"></span><li><a href="*">Example</a> - Current Committee Location</li>
+            </ol>-->
+        </div>
+    </div>
+    
+    <br class="clear" />
+
+    
+    <br class="clear" />
+    
+    <div class="btn-group noPrint" style="margin-top: -10px">
+        <p class="righttext">
+            <a id="byVersion" class="btn" title="View By Bill Version" href="/Session/Bill/2016/1175/ByVersion"><span class="byVersionB">View By Bill Version</span></a>
+            <a id="byCategory" class="btn selected" title="View By Category" href="/Session/Bill/2016/1175/ByCategory"><span class="byCategoryW">View By Category</span></a>
+        </p>
+    </div>
+    <div class="tabbox rounded" id="tabContainer">
+        <div class="tabBg">
+            <ul class="tabs" id="BillPageTabNavigation">
+                <li class="first"><a class="selected" href="/Session/Bill/2016/1175/?StartTab=BillHistory#BillHistory" id="optionBillHistory" data-default="true" data-name="BillHistory" data-contentdiv="tabBodyBillHistory">Bill History</a></li>
+                <li><a href="/Session/Bill/2016/1175/?StartTab=RelatedBills#RelatedBills" id="optionRelatedBills" data-default="false" data-name="RelatedBills" data-contentdiv="tabBodyRelatedBills">Related Bills (3)</a></li>
+                <li><a href="/Session/Bill/2016/1175/?StartTab=BillText#BillText" id="optionBillText" data-default="false" data-name="BillText" data-contentdiv="tabBodyBillText">Bill Text (6)</a></li>
+                <li><a href="/Session/Bill/2016/1175/?StartTab=Amendments#Amendments" id="optionAmendments" data-default="false" data-name="Amendments" data-contentdiv="tabBodyAmendments">Amendments (12)</a></li>
+                <li><a href="/Session/Bill/2016/1175/?StartTab=Analyses#Analyses" id="optionAnalyses" data-default="false" data-name="Analyses" data-contentdiv="tabBodyAnalyses">Analyses (4)</a></li>
+                <li><a href="/Session/Bill/2016/1175/?StartTab=VoteHistory#VoteHistory" id="optionVoteHistory" data-default="false" data-name="VoteHistory" data-contentdiv="tabBodyVoteHistory">Vote History (4)</a></li>
+                <li class="last"><a href="/Session/Bill/2016/1175/?StartTab=Citations#Citations" id="optionCitations" data-default="false" data-name="Citations" data-contentdiv="tabBodyCitations">Citations (16) </a></li>
+            </ul>
+        </div>
+        <div class="tabbody " id="tabBodyBillHistory">
+            <div id="BillHistory"></div>
+            <br class="clear">
+            <h4>Bill History</h4>
+            <table class="tbl width100">
+                <thead>
+                    <tr>
+                        <th class="width15">Date</th>
+                        <th class="width15">Chamber</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+                            <tr>
+                                <td class="centertext">1/7/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Filed<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">1/12/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Introduced -HJ 98 <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">1/13/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Referred to Select Committee on Affordable Healthcare Access; Health Care Appropriations Subcommittee; Health and Human Services Committee -HJ 201 <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">1/15/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; On Committee agenda-- Select Committee on Affordable Healthcare Access, 01/20/16, 2:30 pm, Sumner Hall <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">1/20/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Favorable by Select Committee on Affordable Healthcare Access; YEAS 14 NAYS 0 -HJ 250 <br>
+                                        &bull; Now in Health Care Appropriations Subcommittee -HJ 250 <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">2/4/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; On Committee agenda-- Health Care Appropriations Subcommittee, 02/08/16, 2:00 pm, Webster Hall <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">2/8/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; CS by Health Care Appropriations Subcommittee; YEAS 9 NAYS 0 -HJ 413 <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">2/9/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Pending review of CS under Rule 7.19(c)<br>
+                                        &bull; CS by Health Care Appropriations Subcommittee read 1st time -HJ 411 <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">2/11/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Now in Health and Human Services Committee -HJ 451 <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">2/15/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; On Committee agenda-- Health and Human Services Committee, 02/17/16, 9:00 am, Morris Hall <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">2/17/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; CS/CS by- Health and Human Services Committee; YEAS 17 NAYS 0 -HJ 518 <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">2/22/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Pending review of CS -under Rule 7.19(c)<br>
+                                        &bull; CS/CS by Health and Human Services Committee read 1st time -HJ 515 <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">2/23/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Placed on Calendar -HJ 560 <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">2/26/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Placed on Special Order Calendar, 03/01/16<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">3/1/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Read 2nd time -HJ 627 <br>
+                                        &bull; Amendment(s) adopted (025519, 042105, 481093) -HJ 628 <br>
+                                        &bull; Placed on 3rd reading<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">3/2/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Read 3rd time -HJ 655 <br>
+                                        &bull; CS passed as amended; YEAS 100 NAYS 13 -HJ 656 <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">3/2/2016</td>
+                                <td class="centertext">Senate</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; In Messages<br>
+                                        &bull; Referred to Health Policy; Appropriations Subcommittee on Health and Human Services; Appropriations -SJ 591 <br>
+                                        &bull; Received -SJ 591 <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">3/8/2016</td>
+                                <td class="centertext">Senate</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Withdrawn from Health Policy; Appropriations Subcommittee on Health and Human Services; Appropriations -SJ 814 <br>
+                                        &bull; Placed on Calendar, on 2nd reading -SJ 814 <br>
+                                        &bull; Substituted for <a href="/Session/Bill/2016/1496">CS/SB 1496</a> -SJ 814 <br>
+                                        &bull; Read 2nd time -SJ 814 <br>
+                                        &bull; Amendment(s) adopted (206420) -SJ 815 <br>
+                                        &bull; Placed on 3rd reading<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">3/10/2016</td>
+                                <td class="centertext">Senate</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Read 3rd time -SJ 954 <br>
+                                        &bull; Amendment(s) reconsidered, adopted as amended (773730) -SJ 954 <br>
+                                        &bull; CS passed as amended; YEAS 37 NAYS 1 -SJ 954 <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">3/10/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; In returning messages<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">3/11/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Was taken up -HJ 1081 <br>
+                                        &bull; Amendment(s) to Senate amendment(s) adopted (766465) -HJ 1091 <br>
+                                        &bull; Concurred in Senate amendment(s) as amended (773730) -HJ 1091 <br>
+                                        &bull; CS passed as amended; YEAS 116 NAYS 1 -HJ 1091 <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">3/11/2016</td>
+                                <td class="centertext">Senate</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; In returning messages<br>
+                                        &bull; Concurred in House amendment(s) to Senate amendment(s) (766465) -SJ 1035, 1036 <br>
+                                        &bull; CS passed as amended; YEAS 34 NAYS 1 -SJ 1036 <br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">3/11/2016</td>
+                                <td class="centertext">House</td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Ordered engrossed, then enrolled<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">3/30/2016</td>
+                                <td class="centertext"></td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Signed by Officers and presented to Governor<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">4/14/2016</td>
+                                <td class="centertext"></td>
+                                <td style="padding-left: 10px;">
+                                        &bull; Approved by Governor<br>
+                                        &bull; Chapter No. <a href="http://laws.flrules.org/2016/234" target="_blank">2016-234</a>, companion bill(s) passed, see <a href="/Session/Bill/2016/221">CS/CS/CS/HB 221</a> (Ch. <a href="http://laws.flrules.org/2016/222" target="_blank">2016-222</a>)<br>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tabbody " id="tabBodyRelatedBills" style="display:none">
+            <div id="RelatedBills"></div>
+            <br class="clear">
+            <h4>Related Bills</h4>
+<table class="tbl" >
+    <thead>
+        <tr>
+            <th>Bill Number</th>
+            <th>Subject</th>
+            <th>Filed By</th>
+            <th>Relationship
+                
+            </th>
+            <th>Last Action and Location</th>
+            <th>Track Bills</th>
+        </tr>
+    </thead>
+    <tbody>
+	            <tr>
+	                <td><a href="/Session/Bill/2016/1496">S 1496</a> 
+	                        <span>(c1)</span>
+	                </td>
+	                <td>Transparency in Health Care</td>
+	                <td class="centertext">Bradley</td>
+	                <td class="centertext">Similar</td>
+	                <td>Last Action: 3/8/2016 S Laid on Table, companion bill(s) passed, see CS/CS/HB 1175 (Ch. 2016-234), CS/CS/CS/HB 221 (Ch. 2016-222) -SJ 814 
+	                            <br/>
+	                            Location: Laid on Table
+
+	                </td>						
+	                <td class="centertext trackerLink" data-key="1496">
+	                        <a class="trackerLink" href="/Tracker/Track/1_20061" data-userSubscriptionId="0" data-trackKey="1_20061">
+	                            <img src="/Content/img/icons/individualIcons/commonSprite/track-this.png" alt="Track This Bill" /></a>
+                    
+	                </td>
+	            </tr>
+	            <tr>
+	                <td><a href="/Session/Bill/2016/0221">H 221</a> 
+	                        <span>(er)</span>
+	                </td>
+	                <td>Health Care Services</td>
+	                <td class="centertext">Trujillo</td>
+	                <td class="centertext">Compare</td>
+	                <td>Last Action: 4/14/2016  Chapter No. 2016-222, companion bill(s) passed, see HB 423 (Ch. 2016-224), CS/CS/HB 1175 (Ch. 2016-234)
+	                            <br/>
+	                            Location: Became Law
+
+	                </td>						
+	                <td class="centertext trackerLink" data-key="0221">
+	                        <a class="trackerLink" href="/Tracker/Track/1_18882" data-userSubscriptionId="0" data-trackKey="1_18882">
+	                            <img src="/Content/img/icons/individualIcons/commonSprite/track-this.png" alt="Track This Bill" /></a>
+                    
+	                </td>
+	            </tr>
+	            <tr>
+	                <td><a href="/Session/Bill/2016/1442">S 1442</a> 
+	                        <span>(c3)</span>
+	                </td>
+	                <td>Out-of-network Health Insurance Coverage</td>
+	                <td class="centertext">Garcia</td>
+	                <td class="centertext">Compare</td>
+	                <td>Last Action: 3/3/2016 S Laid on Table, companion bill(s) passed, see CS/CS/CS/HB 221 (Ch. 2016-222), CS/CS/HB 1175 (Ch. 2016-234) -SJ 620 
+	                            <br/>
+	                            Location: Laid on Table
+
+	                </td>						
+	                <td class="centertext trackerLink" data-key="1442">
+	                        <a class="trackerLink" href="/Tracker/Track/1_20013" data-userSubscriptionId="0" data-trackKey="1_20013">
+	                            <img src="/Content/img/icons/individualIcons/commonSprite/track-this.png" alt="Track This Bill" /></a>
+                    
+	                </td>
+	            </tr>
+    </tbody>                
+</table>        </div>
+        <div class="tabbody " id="tabBodyBillText" style="display:none">
+            <div id="BillText"></div>
+
+            <br class="clear">
+            <h4 id="BillText">Bill Text</h4>
+            <table class="tbl">
+                <thead>
+                        <tr>
+                            <th class="width33">Version</th>
+                            <th class="width33">Posted</th>
+                            <th class="width33">Format</th>
+                        </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td class="lefttext">H 1175 Filed</td>
+                            <td class="centertext">1/7/2016 11:06 AM</td>
+                            <td class="centertext">
+<a href="/Session/Bill/2016/1175/BillText/Filed/PDF" target="_blank" title="PDF Bill Text for 1175" class="lnk_BillTextPDF" data-sessionyear="2016" data-chamber="House">PDF</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="lefttext">H 1175 c1</td>
+                            <td class="centertext">2/9/2016 9:14 AM</td>
+                            <td class="centertext">
+<a href="/Session/Bill/2016/1175/BillText/c1/PDF" target="_blank" title="PDF Bill Text for 1175" class="lnk_BillTextPDF" data-sessionyear="2016" data-chamber="House">PDF</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="lefttext">H 1175 c2</td>
+                            <td class="centertext">2/22/2016 8:54 AM</td>
+                            <td class="centertext">
+<a href="/Session/Bill/2016/1175/BillText/c2/PDF" target="_blank" title="PDF Bill Text for 1175" class="lnk_BillTextPDF" data-sessionyear="2016" data-chamber="House">PDF</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="lefttext">H 1175 e1</td>
+                            <td class="centertext">3/1/2016 5:25 PM</td>
+                            <td class="centertext">
+<a href="/Session/Bill/2016/1175/BillText/e1/PDF" target="_blank" title="PDF Bill Text for 1175" class="lnk_BillTextPDF" data-sessionyear="2016" data-chamber="House">PDF</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="lefttext">H 1175 e2</td>
+                            <td class="centertext">3/13/2016 5:11 PM</td>
+                            <td class="centertext">
+<a href="/Session/Bill/2016/1175/BillText/e2/PDF" target="_blank" title="PDF Bill Text for 1175" class="lnk_BillTextPDF" data-sessionyear="2016" data-chamber="House">PDF</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="lefttext">H 1175 er</td>
+                            <td class="centertext">3/13/2016 5:13 PM</td>
+                            <td class="centertext">
+<a href="/Session/Bill/2016/1175/BillText/er/PDF" target="_blank" title="PDF Bill Text for 1175" class="lnk_BillTextPDF" data-sessionyear="2016" data-chamber="House">PDF</a>
+                            </td>
+                        </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tabbody " id="tabBodyAmendments" style="display:none">
+            <div id="Amendments"></div>
+            <br class="clear">
+            <div id="CommitteeAmendment">
+
+                <h4 id="Amendments">Committee Amendments</h4>
+
+                <div id="CommitteeAmendmentASC" class="List">
+
+                                <table class="tbl width100 caption">
+                                    <caption>H 1175 Filed</caption>
+                                    <thead class="caption">
+                                        <tr>
+
+                                            <th>Amendment</th>
+                                            <th>Sponsor</th>
+                                            <th>Filed</th>
+                                            <th>Last Committee Action</th>
+                                            <th>Format</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>    
+                                          
+        <td class="leftText">
+                    521229 - Amendment <br/>
+                        <span style="margin-left: 55px"> 	Remove lines 692-708 and insert: </span>
+                    
+                  
+        </td>
+       
+        <td class="centertext">
+
+Sprowls        </td>
+        <td class="centertext">
+            
+                
+            2/5/2016 <br><span class="nowrap"> 6:00 PM</span>
+        </td>
+        <td class="centertext">
+                Adopted without Objection
+                     <br />2/8/2016    
+        </td>
+        <td class="centertext">
+            <a href="/Session/Bill/2016/1175/Amendment/521229/PDF" target="_blank" Title="PDF for Committee Amendment 521229" class="lnk_AmendmentPDF" data-sessionYear="2016" data-chamber="House">PDF</a>
+        </td>
+
+
+    </tr>
+    <tr>    
+                                          
+        <td class="leftText">
+                    886007 - Amendment <br/>
+                        <span style="margin-left: 55px"> 	Between lines 1362 and 1363, insert: </span>
+                    
+                  
+        </td>
+       
+        <td class="centertext">
+
+Sprowls        </td>
+        <td class="centertext">
+            
+                
+            2/5/2016 <br><span class="nowrap"> 6:01 PM</span>
+        </td>
+        <td class="centertext">
+                Adopted without Objection
+                     <br />2/8/2016    
+        </td>
+        <td class="centertext">
+            <a href="/Session/Bill/2016/1175/Amendment/886007/PDF" target="_blank" Title="PDF for Committee Amendment 886007" class="lnk_AmendmentPDF" data-sessionYear="2016" data-chamber="House">PDF</a>
+        </td>
+
+
+    </tr>
+
+                                    </tbody>
+                                </table>
+                                <table class="tbl width100 caption">
+                                    <caption>H 1175 c1</caption>
+                                    <thead class="caption">
+                                        <tr>
+
+                                            <th>Amendment</th>
+                                            <th>Sponsor</th>
+                                            <th>Filed</th>
+                                            <th>Last Committee Action</th>
+                                            <th>Format</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>    
+                                          
+        <td class="leftText">
+                    466161 - Strike All Amendment <br/>
+                        <span style="margin-left: 55px"> 	Remove everything after the enacting clause and insert: </span>
+                    
+                  
+        </td>
+       
+        <td class="centertext">
+
+Sprowls        </td>
+        <td class="centertext">
+            
+                
+            2/16/2016 <br><span class="nowrap"> 7:02 PM</span>
+        </td>
+        <td class="centertext">
+                Adopted without Objection
+                     <br />2/17/2016    
+        </td>
+        <td class="centertext">
+            <a href="/Session/Bill/2016/1175/Amendment/466161/PDF" target="_blank" Title="PDF for Committee Amendment 466161" class="lnk_AmendmentPDF" data-sessionYear="2016" data-chamber="House">PDF</a>
+        </td>
+
+
+    </tr>
+
+                                    </tbody>
+                                </table>
+                </div>
+            </div>
+
+            <div id="FloorAmendment">
+                <h4>Floor Amendments</h4>
+                <div id="FloorAmendmentASC" class="List">
+                                <table class="tbl width100 caption" style="width: 100%">
+                                    <caption>H 1175 c2</caption>
+                                    <thead class="caption">
+                                        <tr>
+                                            <th>Amendments</th>
+                                            <th>Sponsor</th>
+                                            <th>Filed</th>
+                                            <th>Last Floor Action</th>
+                                            <th>Format</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>    
+                                          
+        <td class="leftText">
+                    025519 - Amendment <br/>
+                        <span style="margin-left: 55px"> 	Remove lines 143-196 and insert: </span>
+                    
+                  
+        </td>
+       
+        <td class="centertext">
+
+Sprowls        </td>
+        <td class="centertext">
+            
+                
+            2/29/2016 <br><span class="nowrap"> 1:22 PM</span>
+        </td>
+        <td class="centertext">
+                    	House: 
+                Adopted
+                     <br />3/1/2016    
+        </td>
+        <td class="centertext">
+            <a href="/Session/Bill/2016/1175/Amendment/025519/PDF" target="_blank" Title="PDF for Committee Amendment 025519" class="lnk_AmendmentPDF" data-sessionYear="2016" data-chamber="House">PDF</a>
+        </td>
+
+
+    </tr>
+    <tr>    
+                                          
+        <td class="leftText">
+                    042105 - Amendment <br/>
+                        <span style="margin-left: 55px"> 	Remove lines 974-985 and insert: </span>
+                    
+                  
+        </td>
+       
+        <td class="centertext">
+
+Sprowls        </td>
+        <td class="centertext">
+            
+                
+            2/29/2016 <br><span class="nowrap"> 1:23 PM</span>
+        </td>
+        <td class="centertext">
+                    	House: 
+                Adopted
+                     <br />3/1/2016    
+        </td>
+        <td class="centertext">
+            <a href="/Session/Bill/2016/1175/Amendment/042105/PDF" target="_blank" Title="PDF for Committee Amendment 042105" class="lnk_AmendmentPDF" data-sessionYear="2016" data-chamber="House">PDF</a>
+        </td>
+
+
+    </tr>
+    <tr>    
+                                          
+        <td class="leftText">
+                    481093 - Amendment <br/>
+                        <span style="margin-left: 55px"> 	Remove lines 1040-1099 and insert: </span>
+                    
+                  
+        </td>
+       
+        <td class="centertext">
+
+Sprowls        </td>
+        <td class="centertext">
+            
+                
+            2/29/2016 <br><span class="nowrap"> 1:23 PM</span>
+        </td>
+        <td class="centertext">
+                    	House: 
+                Adopted
+                     <br />3/1/2016    
+        </td>
+        <td class="centertext">
+            <a href="/Session/Bill/2016/1175/Amendment/481093/PDF" target="_blank" Title="PDF for Committee Amendment 481093" class="lnk_AmendmentPDF" data-sessionYear="2016" data-chamber="House">PDF</a>
+        </td>
+
+
+    </tr>
+
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                                <table class="tbl width100 caption" style="width: 100%">
+                                    <caption>H 1175 e1</caption>
+                                    <thead class="caption">
+                                        <tr>
+                                            <th>Amendments</th>
+                                            <th>Sponsor</th>
+                                            <th>Filed</th>
+                                            <th>Last Floor Action</th>
+                                            <th>Format</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>    
+                                          
+        <td class="leftText">
+                    206420 - Amendment (Delete All) <br/>
+                        <span style="margin-left: 55px"> Delete everything after the enacting clause and insert: </span>
+                    
+                  
+        </td>
+       
+        <td class="centertext">
+
+Bradley        </td>
+        <td class="centertext">
+            
+                
+            3/7/2016 <br><span class="nowrap"> 8:24 AM</span>
+        </td>
+        <td class="centertext">
+                    	Senate: 
+                Replaced by Engrossed Amendment
+                     <br />3/10/2016    
+        </td>
+        <td class="centertext">
+                <a href="/Session/Bill/2016/1175/Amendment/206420/HTML" target="_blank" Title="Web Page for Committee Amendment 206420" class="lnk_AmendmentHTML" data-sessionYear="2016" data-chamber="Senate">Web Page</a> 
+                <br>
+            <a href="/Session/Bill/2016/1175/Amendment/206420/PDF" target="_blank" Title="PDF for Committee Amendment 206420" class="lnk_AmendmentPDF" data-sessionYear="2016" data-chamber="Senate">PDF</a>
+        </td>
+
+
+    </tr>
+    <tr>    
+                                          
+        <td class="leftText">
+                <img src="/Content/img/icons/individualIcons/commonSprite/hierarchy.png" width="8" height="12" alt="hierarchy" style="margin-left: 15px">
+                456594 - Amendment to Amendment (206420) <br/>
+                    <span style="margin-left: 85px"> Delete lines 396 - 400 and insert: </span>
+                  
+        </td>
+       
+        <td class="centertext">
+
+Sobel        </td>
+        <td class="centertext">
+            
+                
+            3/7/2016 <br><span class="nowrap"> 11:07 AM</span>
+        </td>
+        <td class="centertext">
+                    	Senate: 
+                Failed
+                     <br />3/8/2016    
+        </td>
+        <td class="centertext">
+                <a href="/Session/Bill/2016/1175/Amendment/456594/HTML" target="_blank" Title="Web Page for Committee Amendment 456594" class="lnk_AmendmentHTML" data-sessionYear="2016" data-chamber="Senate">Web Page</a> 
+                <br>
+            <a href="/Session/Bill/2016/1175/Amendment/456594/PDF" target="_blank" Title="PDF for Committee Amendment 456594" class="lnk_AmendmentPDF" data-sessionYear="2016" data-chamber="Senate">PDF</a>
+        </td>
+
+
+    </tr>
+    <tr>    
+                                          
+        <td class="leftText">
+                <img src="/Content/img/icons/individualIcons/commonSprite/hierarchy.png" width="8" height="12" alt="hierarchy" style="margin-left: 15px">
+                895330 - Amendment to Amendment (206420) <br/>
+                    <span style="margin-left: 85px"> Delete lines 396 - 400 and insert: </span>
+                  
+        </td>
+       
+        <td class="centertext">
+
+Bradley        </td>
+        <td class="centertext">
+            
+                
+            3/10/2016 <br><span class="nowrap"> 11:46 AM</span>
+        </td>
+        <td class="centertext">
+                    	Senate: 
+                Replaced by Engrossed Amendment
+                     <br />3/10/2016    
+        </td>
+        <td class="centertext">
+                <a href="/Session/Bill/2016/1175/Amendment/895330/HTML" target="_blank" Title="Web Page for Committee Amendment 895330" class="lnk_AmendmentHTML" data-sessionYear="2016" data-chamber="Senate">Web Page</a> 
+                <br>
+            <a href="/Session/Bill/2016/1175/Amendment/895330/PDF" target="_blank" Title="PDF for Committee Amendment 895330" class="lnk_AmendmentPDF" data-sessionYear="2016" data-chamber="Senate">PDF</a>
+        </td>
+
+
+    </tr>
+    <tr>    
+                                          
+        <td class="leftText">
+                <img src="/Content/img/icons/individualIcons/commonSprite/hierarchy.png" width="8" height="12" alt="hierarchy" style="margin-left: 15px">
+                464504 - Amendment to Amendment (206420) <br/>
+                    <span style="margin-left: 85px"> Between lines 1330 and 1331 insert: </span>
+                  
+        </td>
+       
+        <td class="centertext">
+
+Bradley        </td>
+        <td class="centertext">
+            
+                
+            3/10/2016 <br><span class="nowrap"> 9:49 AM</span>
+        </td>
+        <td class="centertext">
+                    	Senate: 
+                Replaced by Engrossed Amendment
+                     <br />3/10/2016    
+        </td>
+        <td class="centertext">
+                <a href="/Session/Bill/2016/1175/Amendment/464504/HTML" target="_blank" Title="Web Page for Committee Amendment 464504" class="lnk_AmendmentHTML" data-sessionYear="2016" data-chamber="Senate">Web Page</a> 
+                <br>
+            <a href="/Session/Bill/2016/1175/Amendment/464504/PDF" target="_blank" Title="PDF for Committee Amendment 464504" class="lnk_AmendmentPDF" data-sessionYear="2016" data-chamber="Senate">PDF</a>
+        </td>
+
+
+    </tr>
+    <tr>    
+                                          
+        <td class="leftText">
+                    773730 - Amendment (Delete All) <br/>
+                        <span style="margin-left: 55px"> Delete everything after the enacting clause and insert: </span>
+                    
+                  
+        </td>
+       
+        <td class="centertext">
+
+Bradley        </td>
+        <td class="centertext">
+            
+                
+            3/10/2016 <br><span class="nowrap"> 2:59 PM</span>
+        </td>
+        <td class="centertext">
+                    	House: 
+                Concurred as Amended
+                     <br />3/11/2016    
+        </td>
+        <td class="centertext">
+                <a href="/Session/Bill/2016/1175/Amendment/773730/HTML" target="_blank" Title="Web Page for Committee Amendment 773730" class="lnk_AmendmentHTML" data-sessionYear="2016" data-chamber="Senate">Web Page</a> 
+                <br>
+            <a href="/Session/Bill/2016/1175/Amendment/773730/PDF" target="_blank" Title="PDF for Committee Amendment 773730" class="lnk_AmendmentPDF" data-sessionYear="2016" data-chamber="Senate">PDF</a>
+        </td>
+
+
+    </tr>
+    <tr>    
+                                          
+        <td class="leftText">
+                <img src="/Content/img/icons/individualIcons/commonSprite/hierarchy.png" width="8" height="12" alt="hierarchy" style="margin-left: 15px">
+                766465 - Amendment to Amendment (773730) <br/>
+                    <span style="margin-left: 85px"> 	Remove lines 250-254 of the amendment and insert: </span>
+                  
+        </td>
+       
+        <td class="centertext">
+
+Sprowls        </td>
+        <td class="centertext">
+            
+                
+            3/11/2016 <br><span class="nowrap"> 8:58 AM</span>
+        </td>
+        <td class="centertext">
+                    	Senate: 
+                Concurred
+                     <br />3/11/2016    
+        </td>
+        <td class="centertext">
+            <a href="/Session/Bill/2016/1175/Amendment/766465/PDF" target="_blank" Title="PDF for Committee Amendment 766465" class="lnk_AmendmentPDF" data-sessionYear="2016" data-chamber="House">PDF</a>
+        </td>
+
+
+    </tr>
+
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="tabbody " id="tabBodyAnalyses" style="display:none">
+            <div id="Analyses"></div>
+            <br class="clear">
+            <h4 id="Analysis">Bill Analyses</h4>
+                <table class="tbl width100">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Analysis</th>
+                            <th>Author</th>
+                            <th>Posted</th>
+                            <th>Format</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td class="centertext">House Message Summary</td>
+                                <td class="centertext">
+                                        H 1175
+
+                                </td>
+                                <td class="centertext">
+                                    Senate
+                                </td>
+                                <td class="centertext">3/11/2016 11:50 AM</td>
+                                <td class="centertext">
+                                        <a href="/Session/Bill/2016/1175/Analyses/2016h1175.hms.PDF" target="_blank">PDF</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">Bill Analysis</td>
+                                <td class="centertext">
+                                        H 1175 
+
+                                </td>
+                                <td class="centertext">
+                                    Select Committee on Affordable Healthcare Access
+                                                    (Post-Meeting)                                </td>
+                                <td class="centertext">4/15/2016 9:27 AM</td>
+                                <td class="centertext">
+                                        <a href="/Session/Bill/2016/1175/Analyses/h1175z1.SCAHA.PDF" target="_blank">PDF</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">Bill Analysis</td>
+                                <td class="centertext">
+                                        H 1175 
+
+                                </td>
+                                <td class="centertext">
+                                    Health Care Appropriations Subcommittee
+                                                    (Post-Meeting)                                </td>
+                                <td class="centertext">2/8/2016 8:26 PM</td>
+                                <td class="centertext">
+                                        <a href="/Session/Bill/2016/1175/Analyses/h1175c.HCAS.PDF" target="_blank">PDF</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="centertext">Bill Analysis</td>
+                                <td class="centertext">
+                                        H 1175 
+
+                                </td>
+                                <td class="centertext">
+                                    Health and Human Services Committee
+                                                    (Post-Meeting)                                </td>
+                                <td class="centertext">2/21/2016 5:16 PM</td>
+                                <td class="centertext">
+                                        <a href="/Session/Bill/2016/1175/Analyses/h1175e.HHSC.PDF" target="_blank">PDF</a>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+        </div>
+        <div class="tabbody " id="tabBodyVoteHistory" style="display:none">
+            <div id="VoteHistory"></div>
+            <br class="clear">
+            <h4>Vote History - Committee</h4>
+                <span>No Committee Vote History Available</span>
+
+            <h4 id="Votes">Vote History - Floor</h4>
+                <table class="tbl">
+                    <thead>
+                        <tr>
+                            <th>Vote</th>
+                            <th class="width30">Date</th>
+                            <th class="width20">Chamber</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td class="lefttext">
+                                    H 1175
+e1                                    
+                                </td>
+                                <td class="centertext">3/2/2016 <span class="nowrap">1:26 PM</span></td>
+
+                                <td class="centertext"> House</td>
+                                <td class="centertext">
+
+                                    <a href="/Session/Bill/2016/1175/Vote/HouseVote_h1175e1668.PDF" target="_blank">100 Yeas - 13 Nays</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lefttext">
+                                    H 1175
+e1                                    
+                                </td>
+                                <td class="centertext">3/10/2016 <span class="nowrap">1:52 PM</span></td>
+
+                                <td class="centertext"> Senate</td>
+                                <td class="centertext">
+
+                                    <a href="/Session/Bill/2016/1175/Vote/SenateVote_h1175e1020.PDF" target="_blank">37 Yeas - 1 Nays</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lefttext">
+                                    H 1175
+e1                                    
+                                </td>
+                                <td class="centertext">3/11/2016 <span class="nowrap">10:36 AM</span></td>
+
+                                <td class="centertext"> House</td>
+                                <td class="centertext">
+
+                                    <a href="/Session/Bill/2016/1175/Vote/HouseVote_h1175e1863.PDF" target="_blank">116 Yeas - 1 Nays</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lefttext">
+                                    H 1175
+e1                                    
+                                </td>
+                                <td class="centertext">3/11/2016 <span class="nowrap">12:55 PM</span></td>
+
+                                <td class="centertext"> Senate</td>
+                                <td class="centertext">
+
+                                    <a href="/Session/Bill/2016/1175/Vote/SenateVote_h1175e1013.PDF" target="_blank">34 Yeas - 1 Nays</a>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+        </div>
+
+        <div class="tabbody " id="tabBodyCitations" style="display:none">
+            <div id="Citations"></div>
+            <br class="clear">
+            <h4 id="Citations">Citations - Statutes (16)</h4>
+                <table class="tbl width100">
+                    <thead>
+                        <tr>
+                            <th class="width10">Citation</th>
+                            <th>Catchline</th>
+                            <th class="width20">Location in Bill <a id="LIBHelp" href="" class="SearchTermHelp"><span class="tooltip commonIco iconOnly">Location In Bill Help</span></a></th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td class="centertext">
+                                        <a href="/laws/statutes/2015/20.42">20.42</a>
+                                </td>
+                                <td> Agency for Health Care Administration.</td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=44">Page 44</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="centertext">
+                                        <a href="/laws/statutes/2015/110.123">110.123</a>
+                                </td>
+                                <td> State group insurance program.</td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=42">Page 42</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="centertext">
+                                        <a href="/laws/statutes/2015/381.026">381.026</a>
+                                </td>
+                                <td> Florida Patient’s Bill of Rights and Responsibilities.</td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=45">Page 45</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="centertext">
+                                        <a href="/laws/statutes/2015/395.107">395.107</a>
+                                </td>
+                                <td> Urgent care centers; publishing and posting schedule of charges; penalties.</td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=14">Page 14</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="centertext">
+                                        <a href="/laws/statutes/2015/395.301">395.301</a>
+                                </td>
+                                <td> Itemized patient bill; form and content prescribed by the agency; patient admission status notification.</td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=4">Page 4</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="centertext">
+                                        <a href="/laws/statutes/2015/395.602">395.602</a>
+                                </td>
+                                <td> Rural hospitals.</td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=48">Page 48</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="centertext">
+                                        <a href="/laws/statutes/2015/395.6025">395.6025</a>
+                                </td>
+                                <td> Rural hospital replacement facilities.</td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=50">Page 50</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="centertext">
+                                        <a href="/laws/statutes/2015/408.05">408.05</a>
+                                </td>
+                                <td> Florida Center for Health Information and Policy Analysis.</td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=16">Page 16</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="centertext">
+                                        <a href="/laws/statutes/2015/408.061">408.061</a>
+                                </td>
+                                <td> Data collection; uniform systems of financial reporting; information relating to physician charges; confidential information; immunity.</td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=33">Page 33</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="centertext">
+                                        <a href="/laws/statutes/2015/408.07">408.07</a>
+                                </td>
+                                <td> Definitions.</td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=50">Page 50</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="centertext">
+                                        <a href="/laws/statutes/2015/408.18">408.18</a>
+                                </td>
+                                <td> Health Care Community Antitrust Guidance Act; antitrust no-action letter; market-information collection and education.</td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=52">Page 52</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="centertext">
+                                        <a href="/laws/statutes/2015/409.967">409.967</a>
+                                </td>
+                                <td> Managed care plan accountability.</td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=42">Page 42</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="centertext">
+                                        <a href="/laws/statutes/2015/456.0575">456.0575</a>
+                                </td>
+                                <td> Duty to notify patients.</td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=36">Page 36</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="centertext">
+                                        <a href="/laws/statutes/2015/465.0244">465.0244</a>
+                                </td>
+                                <td> Information disclosure.</td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=52">Page 52</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="centertext">
+627.6385                                </td>
+                                <td> </td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=37">Page 37</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td class="centertext">
+                                        <a href="/laws/statutes/2015/641.54">641.54</a>
+                                </td>
+                                <td> Information disclosure.</td>
+                                <td>
+                                            <span class="nowrap"> <a target="_blank" href="/Session/Bill/2016/1175/BillText/er/PDF#page=40">Page 40</a> <span class="filetype">(pdf)</span></span>                                </td>
+                                
+                            </tr>
+                    </tbody>
+                </table>
+            <h4>Citations - Constitution (0)</h4>
+                <p>No Constitutional citations. </p>
+
+            <h4>Citations - Chapter Law (0)</h4>
+                <p>No Chapter Law citations. </p>
+
+        </div>
+    </div>
+</div>
+
+<div id="RelationShipTips" class="companions-modal" title="Bill Relationships" style="display: none">
+    <p>
+        <strong>Identical bill</strong><br />
+        Companion bills that are identical word-for-word, not including titles. However, Resolutions and Concurrent Resolutions are considered identical if the only difference is the word "House" or "Senate."
+    </p>
+    <p>
+        <strong>Similar bill</strong><br />
+        Companion bills that are substantially similar in text or have substantial portions of text that are largely the same.
+    </p>
+    <p>
+        <strong>Compare bill</strong><br />
+        Bills that have selected provisions that are similar in text.
+    </p>
+    <p>
+        <strong>Linked bill</strong><br />
+        A bill that is contingent upon passage of another bill within the same chamber, e.g., a trust fund bill, a bill providing a public record exemption, or an implementing bill.
+    </p>
+</div>
+
+<div id="LocationTips" class="companions-modal" title="Location in Bill Help" style="display: none">
+    <p>
+        The page numbers, when listed, for citations are constantly under review. The journals or printed bills of the respective chambers should be consulted as the official documents of the Legislature.
+    </p>
+    <p>
+        The links for the page numbers are formatted to open the bill text PDF directly to the page containing the citation. However, if your browser is set to open PDFs in a new window, as is often the case with 64-bit browsers, the bill text will open to the first page.
+    </p>
+</div>
+
+
+                </div>
+                <!-- #main:end -->
+            </div>
+            <!-- #main-container:end  -->
+            <!-- Footer: begin-->
+            <footer id="footer">
+                <!--Footer Site Map Nav: begin-->
+                <nav>
+                    <a href="/" title="Home">
+                        <p class="seal sealsImg iconOnly">Home</p>
+                    </a>
+                    <div class="grid-20">
+                        <p><a href="/Senators">Senators</a></p>
+                        <ul>
+                            <li><a href="/Senators/#Senators">Senator List</a></li>
+                            <li><a href="/Senators/Find">Find Your Legislators</a></li>
+                            <li><a href="/Senators/Districts">District Maps</a></li>
+                            <li><a href="/Senators/VoteDisclosures">Vote Disclosures</a></li>
+                        </ul>
+                        <p><a href="/Committees">Committees</a></p>
+                        <ul>
+                            <li><a href="/Committees/#com-list">Committee List</a></li>
+                            <li><a href="/Committees/Publications">Committee Publications</a></li>
+                            
+                        </ul>
+                        <p><a href="/Search/Results">Search</a></p>
+                        <ul>
+                            <li><a href="/Search/BillSearchTips">Bill Search Tips</a></li>
+                            <li><a href="/Search/StatuteSearchTips">Statute Search Tips</a></li>
+                            <li><a href="/Search/SiteSearchTips">Site Search Tips</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid-20">
+                        <p><a href="/Session">Session</a></p>
+                        <ul>
+                            <li><a href="/Session/Bills">Bills</a></li>
+                            <li><a href="/Session/Calendars">Calendars</a></li>
+                            <li><a href="/Session/Journals">Journals</a></li>
+                            <li><a href="/Session/Appropriations">Appropriations</a></li>
+                            <li><a href="/Session/Conferences">Conferences</a></li>
+                            <li><a href="/Session/Reports">Reports</a></li>
+                            <li><a href="/Session/ExecutiveAppointments">Executive Appointments</a></li>
+                            <li><a href="/Session/ExecutiveSuspensions">Executive Suspensions</a></li>
+                            <li><a href="/Session/Redistricting">Redistricting</a></li>
+                        </ul>
+                        <p><a href="/Laws">Laws</a></p>
+                        <ul>
+                            <li><a href="/Laws/Statutes">Statutes</a></li>
+                            <li><a href="/Laws/Constitution">Constitution</a></li>
+                            <li><a href="http://laws.flrules.org/">Laws of Florida <span class="newWindowWhiteIco16 commonIco"></span></a></li>
+                            <li><a href="http://www.leg.state.fl.us/cgi-bin/View_Page.pl?Tab=info_center&Submenu=2&File=index.html&Directory=portal/legistore/&Location=app">Order - Legistore <span class="newWindowWhiteIco16 commonIco"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="grid-20">
+                        <p><a href="/Media">Media</a></p>
+                        <ul>
+                            <li><a href="/Media/PressReleases">Press Releases</a></li>
+                            <li><a href="/Media/Publications">Publications</a></li>
+                            <li><a href="/Media/Videos">Videos</a></li>
+                            <li><a href="/Media/Topics">Topics</a></li>
+                            <li><a href="/Media/VideoSchedule">Video Broadcast Schedule</a></li>
+                        </ul>
+                        <p><a href="/About">About</a></p>
+                        <ul>
+                            <li><a href="http://archive.flsenate.gov/cgi-bin/View_Page.pl?Mode=Archives&Tab=info_center&submenu=7&File=index.cfm&Directory=Info_Center/Archive/&Location=app">Historical Information <span class="newWindowWhiteIco16 commonIco"></span></a></li>
+                            
+                            <li><a href="/About/Visit">Visit Us</a></li>
+                            <li><a href="/About/Contact">Contact Us</a></li>
+                            <li><a href="/About/PageProgram">Page Program</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid-20">
+                        <p><a href="/Offices">Offices</a></p>
+                        <ul>
+                            <li><a href="/Offices/President">President's Office </a></li>
+                            <li><a href="/Offices/Majority">Majority Office</a></li>
+                            <li><a href="/Offices/Minority">Minority Office</a></li>
+                            <li><a href="/Offices/Secretary">Secretary's Office</a></li>
+                        </ul>
+                        <p><a href="/Reference">Reference</a></p>
+                        <ul>
+                            <li><a href="/Reference/Glossary">Glossary</a></li>
+                            <li><a href="/Reference/FAQ">FAQ</a></li>
+                            <li><a href="/Reference/Help">Help</a></li>
+                            <li><a href="/Reference/Publications">Publications</a></li>
+                            <li><a href="/Reference/Links">Links</a></li>
+                            <li><a href="http://archive.flsenate.gov">Archives <span class="newWindowWhiteIco16 commonIco"></span></a></li>
+                            <li><a href="/Reference/AdvisoryOpinions">Advisory Opinions</a></li>
+                            <li><a href="/Reference/PublicRecords">Public Records</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid-20">
+                        <p><a href="/About/Contact#connect">Connect with the Senate</a></p>
+                        <ul class="inline">                            
+                            <li><a href="http://www.twitter.com/flsenate" class="twitterIco16 commonIco iconOnly">Twitter</a></li>
+                            <li><a href="/Tracker/RSS" class="rssIco16 commonIco iconOnly">RSS</a></li>
+                        </ul>
+                        <br class="clear">
+                        <p><a href="/Tracker">Senate Tracker</a></p>
+                        <ul>
+
+                                <li><a href="/Tracker/Login">Login</a></li>
+                                <li><a href="/Tracker/Signup">Sign Up</a></li>
+                            <li><a href="/Tracker/Help">Tracker Help</a></li>
+
+                        </ul>
+                        <p><a href="/About/Accessibility#plugins">Plug-ins</a></p>
+                        <ul>
+                            <li><a href="http://get.adobe.com/reader/" target="_blank">Adobe Acrobat Reader <span class="newWindowWhiteIco16 commonIco"></span></a></li>
+                            <li><a href="http://www.winzip.com/win/en/downwz.htm" target="_blank">WinZip <span class="newWindowWhiteIco16 commonIco"></span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!--footer site map nav:end-->
+
+                <div class="grid-100" id="disclaimer">
+                    <p>Disclaimer: The information on this system is unverified. The journals or printed bills of the respective chambers should be consulted for official purposes.</p>
+                    <p>
+                        <span class="noPrint">
+                            <a href="/About/Privacy">Privacy Statement</a>|<a href="/About/Accessibility">Accessibility</a><br>
+                        </span>Copyright &copy; 2000- 2019 &nbsp;State of Florida.
+                    </p>
+                </div>
+                <!-- Footer: end -->
+            </footer>
+        </div>
+    </div>
+
+    
+
+
+    <script src="/Scripts/jquery.history.js"></script>
+    <script src="/Scripts/jquery.placeholder.js"></script>
+    <script src="/Scripts/jquery.colorbox-min.js"></script>
+    <script>
+        $(function () {
+
+
+            //Google Analystics Event Handling
+            AddGoogleTracking("#myFloridaHouseLink", "Global", "Link Click", "MyFloridaHouse.gov");
+
+            $(".GACalendarMenu").click(function () {
+                LogEvent("CalendarHome", "Link Click", $(this).text());
+            });
+
+            $(".GASlideMenuLink").click(function () {
+                LogEvent("Spotlights", "Menu", $(this).text()); //Slide Menu
+            });
+
+            $(".GAMobile").click(function () {
+                LogEvent("Mobile", "Link Click", "Mobile Site");
+            });
+
+            //Set Default Session Year data
+            var defaultSession = $("#billYear").val();
+            $("#DefaultSessionYear").val(defaultSession);
+            $('input, textarea').placeholder();
+        }); //end document.ready
+        function RefreshTheData(data) {
+            if (data != null) {
+                $('#watchNow').show();
+                $('#BillNumber').html(data.BillName);
+                $('#BillOwner').html(data.BillOwner);
+                $('#BillTitle').html(data.BillShortTitle);
+            }
+            else {
+                $('#watchNow').hide();
+            }
+        }
+    </script>
+
+
+    
+    <script src="/Scripts/Tabs.js"></script>
+    <script type="text/JavaScript" src="/Scripts/jquery-ui-1.10.3.min.js"></script>
+    <script>
+         $(function () {
+             InitTabs(undefined, 'DEFAULT');
+             $(".companions").show();
+             $(".companions").click(function () {
+                 $("#RelationShipTips").dialog({
+                     height: 350,
+                     width: 600,
+                     modal: true
+                 });
+                 return false;
+             });
+
+             $(".SearchTermHelp").show();
+             $(".SearchTermHelp").click(function () {
+                 $("#LocationTips").dialog({
+                     height: 350,
+                     width: 600,
+                     modal: true
+                 });
+                 return false;
+             });
+
+             $(".lnk_BillTextHTML").click(function () {
+                 var SessionYear = $(this).data("sessionyear");
+                 var Chamber = $(this).data("chamber");
+                 LogEvent("Bills", "Link Click", SessionYear + " " + Chamber + " Bill Text Version Web Page");
+             });
+             $(".lnk_BillTextPDF").click(function () {
+                 var SessionYear = $(this).data("sessionyear");
+                 var Chamber = $(this).data("chamber");
+                 LogEvent("Bills", "Link Click", SessionYear + " " + Chamber + " Bill Text Version PDF");
+             });
+             $(".lnk_AmendmentHTML").click(function () {
+                 var SessionYear = $(this).data("sessionyear");
+                 var Chamber = $(this).data("chamber");
+                 LogEvent("Bills", "Link Click", SessionYear + " " + Chamber + " Amendment Web Page");
+             });
+             $(".lnk_AmendmentPDF").click(function () {
+                 var SessionYear = $(this).data("sessionyear");
+                 var Chamber = $(this).data("chamber");
+                 LogEvent("Bills", "Link Click", SessionYear + " " + Chamber + " Amendment PDF");
+             });
+
+             AddGoogleTracking("#byVersion", "Bills", "Button Click", "View by Version");
+             AddGoogleTracking("#byCategory", "Bills", "Button Click", "View by Category");
+         });
+    </script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-31712878-1', 'flsenate.gov');
+  ga('send', 'pageview');
+</script>
+
+    <script src="/Scripts/GoogleAnalytics.js"></script>
+</body>
+</html>

@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/Icons/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/Icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/Icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/Icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/Icons/favicon-16x16.png" sizes="16x16" />
+    <link rel="manifest" href="/Icons/manifest.json" />
+    <link rel="mask-icon" href="/Icons/safari-pinned-tab.svg" color="#0168c9" />
+    <link rel="shortcut icon" href="/Icons/favicon.ico" />
+    <meta name="msapplication-config" content="/Icons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Chapter 12C</title>
+
+    <!-- Core CSS -->
+    <link href="/bundles/css/core?v=bYS3RLFVfuHZu2CKNxu_KMaTgentc5aSW6tCVsWeNOw1" rel="stylesheet"/>
+
+
+    <!-- Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" rel="stylesheet" type="text/css" />
+    <link href="//fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet" type="text/css" />
+    <link href="/Content/font-awesome.min.css" rel="stylesheet"/>
+
+
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+        <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function() {
+                    (i[r].q = i[r].q || []).push(arguments);
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-44972849-4', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+    <script src="/bundles/jquery?v=-Z_WGCCz27f7K1fl9qko0TVhwr6z8WRHt_1vrPjbJyU1"></script>
+
+</head>
+
+
+<body class="subpage">
+
+<div id="alertContainer">
+    <!-- Alert Banner -->
+
+</div>
+
+<!-- NCSL Banner -->
+<div id="ncslBanner">
+    <a href="http://www.ncsl.org/press-room/massachusetts-legislature-s-website-takes-top-award-at-ncsl-summit.aspx" target="_blank">
+        <img src="/assets/img/ncsl-logo.png" alt="NCSL Logo" />
+        2018 Online Democracy Award Winner
+    </a>
+    <button class="close" id="closeNcslBanner">&times;<span class="sr-only">Close</span></button>
+</div>
+
+<!-- Skip to Content Link -->
+<a href="#mainContent" class="sr-only sr-only-focusable">Skip to Content</a>
+<div id="background">
+    <!--Header-->
+    <header>
+    <div class="container">
+        <a class="masthead" href="/">
+            <span class="headNumber">The 191st General Court of the </span>
+            <span class="headCommonwealth">Commonwealth of <span class="headMass">Massachusetts</span></span>
+        </a>
+        <div class="utilityLinks hidden-xs dropdown navbar-right">
+
+                    <button id="utilMyLegBtn" class="utilityButton dropdown-toggle" aria-haspopup="true" aria-controls="loginFlyout" data-toggle="dropdown">
+                        <span class="fa-stack fa-lg">
+                            <span class="fa fa-user fa-stack-2x"></span>
+                        </span>
+                        <span class="mlTitle">MyLegislature <span class="fa fa-caret-down"></span></span>
+                    </button>
+                    <div id="loginFlyout" class="dropdown-menu dropdownLogin" aria-live="assertive">
+                        <h2 class="text-center loginTitle">MyLegislature</h2>
+<form action="/Account/Login?isModal=False" class="form-horizontal clearfix" data-ajax="true" data-ajax-begin="inProgress" data-ajax-complete="loginFlyoutFormOnComplete" data-ajax-method="POST" id="loginFlyoutForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="j6YdJjBJmjNkr_jvBFzVyIvEXLtGzaVifhDleRWG9wQmb9RcKhOqmE5-rEGDhUA__JVg02o8CAE_qpUUbtssh16vnko1" />
+<legend class="text-center">Sign in with MyLegislature Account</legend>
+<div class="form-group">
+    <label class="col-sm-3 control-label" for="Email">Email</label>
+    <div class="col-sm-9">
+        <input class="form-control" data-val="true" data-val-email="Invalid email address." data-val-required="Email address is required." id="Email" name="Email" type="text" value="" />
+        <span class="field-validation-valid help-block" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+    </div>
+</div>
+<div class="form-group passwordField">
+    <label class="col-sm-3 control-label" for="Password">Password</label>
+    <div class="col-sm-9 clearfix">
+        <input class="form-control" data-val="true" data-val-required="Password required." id="Password" name="Password" type="password" />
+        <span class="field-validation-valid help-block" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+        
+    </div>
+</div>
+<div class="col-xs-12 text-center">
+    <div class="clearfix">
+        <a class="forgotPassword" aria-haspopup="true" data-toggle="modal" data-target="#forgotPasswordModal">Forgot Password?</a>
+    </div>
+    <input type="submit" value="Sign in" class="btn btn-default btn-lg fnStart"/>
+    <input type="submit" value="Signing In..." class="btn btn-default btn-lg fnEnd" style="display: none" />
+</div>
+</form>
+<div class="form-group text-center">
+    <button type="button" onclick="window.location='/Account/ExternalLogin?provider=Facebook';" class="btn btn-facebook btn-md oauthButton"><span class="fa fa-facebook-official fa-fw"></span> Sign in with Facebook</button>
+    <button type="button" onclick="window.location='/Account/ExternalLogin?provider=Google';" class="btn btn-google btn-md oauthButton"><span class="fa fa-google-plus fa-fw"></span> Sign in with Google</button>
+</div>
+<div class="row">
+    <div class="col-xs-12 loginFooterWrapper">
+        <p class="loginFooter clearfix">
+          <a class="pull-left" href="#" data-toggle="modal" data-target="#registrationModal">Not Registered?</a>
+          <a class="pull-right" href="/MyLegislature/About">Learn More Here! &raquo;</a>
+        </p>
+    </div>
+</div>
+
+                    </div>
+        </div>
+        <!-- /.utilityLinks -->
+    </div>
+    <!-- /.container -->
+</header>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar yamm" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">Menu<span class="sr-only">Toggle navigation</span></button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="visible-xs"><a href="/">Home</a></li>
+                <li class="visible-xs"><a role="button" href="#" data-toggle="modal" data-target="#mobileSearch" aria-haspopup="true">Search</a></li>
+                    <li class="visible-xs">
+                        <a data-toggle="modal" data-target="#loginModal">
+                            <span class="fa fa-user"></span> 
+                            MyLegislature
+                        </a>
+                    </li>
+                
+                <li class="dropdown yamm-fw">
+        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">Bills &amp; Laws</a>
+        <ul class="dropdown-menu">
+            <li>
+                <div class="yamm-content">
+                    <div class="row">
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/Bills">Bills</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/Bills/Search">
+        All Bills
+            </a>
+</li>
+<li>
+    <a href="/Bills/RecentBills">
+        Recent &amp; Popular Bills
+            </a>
+</li>
+<li>
+    <a href="/ClerksOffice/Senate/Deadlines">
+        Senate Deadlines
+            </a>
+</li>
+<li>
+    <a href="/ClerksOffice/House/Deadlines">
+        House Deadlines
+            </a>
+</li>
+<li>
+    <a href="/Bills/CityTown">
+        Browse Bills by City/Town
+            </a>
+</li>
+<li class="form-group">
+    <label for="billsSearch">Search Bills:</label>
+    <form action="/Bills/Search" method="get">    <h2 class="sr-only">Search</h2>
+    <label class="sr-only" for="billsSearch">Search Bills</label>
+    <div class="typeahead-container">
+        <div class="typeahead-field">
+            <div class="input-group typeahead-query ">
+                <input
+                    id="billsSearch"
+                    name="SearchTerms"
+                    class="searchBox form-control"
+                    type="search"
+                    value=""
+                    data-tt-search-type="Bills"
+                    data-tt-search-reset="Bills"
+                    data-tt-url="/TypeAheadSearch"
+                    data-tt-branch=""
+                    data-tt-limit="7"
+                    aria-haspopup="true"
+                    aria-autocomplete="list"
+                    autocomplete="off"
+                    placeholder="Search Bills..."/>
+                <div class="input-group-btn typeahead-button">
+
+                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="billsSearch"><span class="fa fa-search"></span><span class="sr-only">Search</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/Laws/GeneralLaws">General Laws</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/Laws/GeneralLaws">
+        Browse General Laws
+            </a>
+</li>
+<li class="form-group">
+    <label for="generalLawsSearch">Search General Laws:</label>
+    <form action="/Laws/GeneralLaws/Search" method="get">    <h2 class="sr-only">Search</h2>
+    <label class="sr-only" for="generalLawsSearch">Search General Laws</label>
+    <div class="typeahead-container">
+        <div class="typeahead-field">
+            <div class="input-group typeahead-query ">
+                <input
+                    id="generalLawsSearch"
+                    name="SearchTerms"
+                    class="searchBox form-control"
+                    type="search"
+                    value=""
+                    data-tt-search-type="GeneralLaws"
+                    data-tt-search-reset="GeneralLaws"
+                    data-tt-url="/TypeAheadSearch"
+                    data-tt-branch=""
+                    data-tt-limit="7"
+                    aria-haspopup="true"
+                    aria-autocomplete="list"
+                    autocomplete="off"
+                    placeholder="Search General Laws..."/>
+                <div class="input-group-btn typeahead-button">
+
+                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="generalLawsSearch"><span class="fa fa-search"></span><span class="sr-only">Search</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</li>
+<li class="form-inline generalLawsDirect">
+<form action="/GeneralLaws/GoTo" method="get">            <span class="navLabel">Go to a General Law:</span>
+            <div class="form-group">
+                <label for="ChapterGoTo" class="sr-only">Chapter:</label>
+                <input id="ChapterGoTo" name="ChapterGoTo" type="text" value="" class="form-control" placeholder="Chapter"/>
+            </div>
+            <div class="form-group">
+                <label for="SectionGoTo" class="sr-only">Section Number:</label>
+                <input id="SectionGoTo" name="SectionGoTo" type="text" value="" class="form-control" placeholder="Section"/>
+            </div>
+            <div class="form-group">
+                <label for="keyword" class="sr-only">Keyword:</label>
+                <input id="keyword" name="keyword" type="text" value="" class="form-control" placeholder="Keyword"/>
+            </div>
+            <button class="btn btn-primary searchButton" type="submit">Go <span class="sr-only"> to that General Law</span><span class="fa fa-angle-right"></span></button>
+</form></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/Laws/SessionLaws">Session Laws</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/Laws/SessionLaws">
+        Browse Session Laws
+            </a>
+</li>
+<li class="form-group">
+    <label for="sessionLawsSearch">Search Session Laws:</label>
+    <form action="/Laws/SessionLaws/Search" method="get">    <h2 class="sr-only">Search</h2>
+    <label class="sr-only" for="sessionLawsSearch">Search Session Laws</label>
+    <div class="typeahead-container">
+        <div class="typeahead-field">
+            <div class="input-group typeahead-query ">
+                <input
+                    id="sessionLawsSearch"
+                    name="SearchTerms"
+                    class="searchBox form-control"
+                    type="search"
+                    value=""
+                    data-tt-search-type="SessionLaws"
+                    data-tt-search-reset="SessionLaws"
+                    data-tt-url="/TypeAheadSearch"
+                    data-tt-branch=""
+                    data-tt-limit="7"
+                    aria-haspopup="true"
+                    aria-autocomplete="list"
+                    autocomplete="off"
+                    placeholder="Search Session Laws..."/>
+                <div class="input-group-btn typeahead-button">
+
+                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="sessionLawsSearch"><span class="fa fa-search"></span><span class="sr-only">Search</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</li>
+<li class="form-inline generalLawsDirect">
+<form action="/SessionLaws/GoTo" method="get">            <script>
+                var sessionLawActYears = [{"Disabled":false,"Group":null,"Selected":false,"Text":"2019","Value":"2019"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2018","Value":"2018"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2017","Value":"2017"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2016","Value":"2016"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2015","Value":"2015"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2014","Value":"2014"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2013","Value":"2013"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2012","Value":"2012"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2011","Value":"2011"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2010","Value":"2010"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2009","Value":"2009"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2008","Value":"2008"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2007","Value":"2007"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2006","Value":"2006"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2005","Value":"2005"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2004","Value":"2004"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2003","Value":"2003"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2002","Value":"2002"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2001","Value":"2001"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2000","Value":"2000"},{"Disabled":false,"Group":null,"Selected":false,"Text":"1999","Value":"1999"},{"Disabled":false,"Group":null,"Selected":false,"Text":"1998","Value":"1998"},{"Disabled":false,"Group":null,"Selected":false,"Text":"1997","Value":"1997"}];
+                var sessionLawResolveYears = [{"Disabled":false,"Group":null,"Selected":false,"Text":"2018","Value":"2018"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2016","Value":"2016"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2014","Value":"2014"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2013","Value":"2013"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2012","Value":"2012"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2010","Value":"2010"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2009","Value":"2009"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2008","Value":"2008"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2007","Value":"2007"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2006","Value":"2006"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2004","Value":"2004"},{"Disabled":false,"Group":null,"Selected":false,"Text":"2001","Value":"2001"},{"Disabled":false,"Group":null,"Selected":false,"Text":"1998","Value":"1998"}];
+            </script>
+            <span class="navLabel">Go to a Session Law:</span>
+            <div class="form-group sessionLawType">
+                <label for="TypeGoTo" class="sr-only">Type:</label>
+                <select name="TypeGoTo" id="TypeGoTo" class="form-control" onchange="sessionLawTypeChange(this, 'Resolves')">
+                        <option value="Acts">Act</option>
+                        <option value="Resolves">Resolve</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ChapterGoTo" class="sr-only">Chapter:</label>
+                <input id="ChapterGoTo" name="ChapterGoTo" type="text" value="" class="form-control" placeholder="Chapter"/>
+            </div>
+            <div class="form-group">
+                <label for="YearGoTo" class="sr-only">Year:</label>
+                <select name="YearGoTo" id="YearGoTo" class="form-control sessionLawYearList">
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Go <span class="sr-only">to Session Law</span><span class="fa fa-angle-right"></span></button>
+</form></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+<li>
+    <h3>
+        <a href="/Laws/Constitution">
+            Massachusetts Constitution
+                    </a>
+    </h3>
+</li>
+<li>
+    <h3>
+        <a href="/Journal/Senate">
+            Senate Journals
+                    </a>
+    </h3>
+</li>
+<li>
+    <h3>
+        <a href="/Journal/House">
+            House Journals
+                    </a>
+    </h3>
+</li>
+<li>
+    <h3>
+        <a href="/Laws/Rules/Joint">
+            Rules
+                    </a>
+    </h3>
+</li>
+<li>
+    <h3>
+        <a href="/Reports">
+            Reports
+                    </a>
+    </h3>
+</li>
+<li>
+    <h3>
+        <a href="/Content/Documents/General/LegislativeDraftingManual.pdf" target="_blank">
+            Drafting Manual
+                            <span class="fa fa-file-pdf-o"></span>
+        </a>
+    </h3>
+</li>
+<li>
+    <h3>
+        <a href="/StateHouse/Glossary">
+            Glossary
+                    </a>
+    </h3>
+</li>
+    </ul>
+</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+</li>
+<li class="dropdown yamm-fw">
+        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">Budget</a>
+
+<ul class="dropdown-menu" id="budgetMenu">
+    <li>
+        <div class="yamm-content homeBudget">
+            <h2><a href="/Budget">FY 2020 Budget</a></h2>
+            <ol>
+                    <li class="completed">
+                         <a href="/Budget/GovernorsBudget">
+                            Governor&#39;s Budget
+                            <span class="indicator" aria-hidden="true"></span>
+                                                            <span class="indicatorLine right" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="completed">
+                         <a href="/Budget/HouseWaysMeansBudget">
+                            House Ways &amp; Means Budget
+                            <span class="indicator" aria-hidden="true"></span>
+                                <span class="indicatorLine left" aria-hidden="true"></span>
+                                                            <span class="indicatorLine right" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="current">
+                         <a href="/Budget/HouseDebate">
+                            House Debate
+                            <span class="indicator" aria-hidden="true"></span>
+                                <span class="indicatorLine left" aria-hidden="true"></span>
+                                                            <span class="indicatorLine right" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="">
+                         <a href="/Budget/HouseBudget">
+                            House Budget
+                            <span class="indicator" aria-hidden="true"></span>
+                                <span class="indicatorLine left" aria-hidden="true"></span>
+                                                            <span class="indicatorLine right" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="">
+                         <a href="/Budget/SenateWaysMeansBudget">
+                            Senate Ways &amp; Means Budget
+                            <span class="indicator" aria-hidden="true"></span>
+                                <span class="indicatorLine left" aria-hidden="true"></span>
+                                                            <span class="indicatorLine right" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="">
+                         <a href="/Budget/SenateDebate">
+                            Senate Debate
+                            <span class="indicator" aria-hidden="true"></span>
+                                <span class="indicatorLine left" aria-hidden="true"></span>
+                                                            <span class="indicatorLine right" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="">
+                         <a href="/Budget/SenateBudget">
+                            Senate Budget
+                            <span class="indicator" aria-hidden="true"></span>
+                                <span class="indicatorLine left" aria-hidden="true"></span>
+                                                            <span class="indicatorLine right" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="">
+                         <a href="/Budget/ConferenceCommittee">
+                            Conference Committee
+                            <span class="indicator" aria-hidden="true"></span>
+                                <span class="indicatorLine left" aria-hidden="true"></span>
+                                                            <span class="indicatorLine right" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="">
+                         <a href="/Budget/FinalBudget">
+                            Final Budget
+                            <span class="indicator" aria-hidden="true"></span>
+                                <span class="indicatorLine left" aria-hidden="true"></span>
+                                                    </a>
+                    </li>
+            </ol>
+        </div>
+    </li>
+</ul></li>
+<li class="dropdown yamm-fw">
+        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">Legislators</a>
+        <ul class="dropdown-menu">
+            <li>
+                <div class="yamm-content">
+                    <div class="row">
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/Legislators">Legislators</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/Redistricting">
+        Redistricting
+            </a>
+</li>
+<li>
+    <a href="/Search/FindMyLegislator">
+        Find Your Legislators
+            </a>
+</li>
+<li class="form-group">
+    <label for="legisSearch">Search Legislators:</label>
+    <form action="/Legislators/Search" method="get">    <h2 class="sr-only">Search</h2>
+    <label class="sr-only" for="legisSearch">Search Legislators</label>
+    <div class="typeahead-container">
+        <div class="typeahead-field">
+            <div class="input-group typeahead-query ">
+                <input
+                    id="legisSearch"
+                    name="SearchTerms"
+                    class="searchBox form-control"
+                    type="search"
+                    value=""
+                    data-tt-search-type="Legislators"
+                    data-tt-search-reset="Legislators"
+                    data-tt-url="/TypeAheadSearch"
+                    data-tt-branch=""
+                    data-tt-limit="7"
+                    aria-haspopup="true"
+                    aria-autocomplete="list"
+                    autocomplete="off"
+                    placeholder="Search Legislators..."/>
+                <div class="input-group-btn typeahead-button">
+
+                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="legisSearch"><span class="fa fa-search"></span><span class="sr-only">Search</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/Legislators/Leadership">Legislative Leadership</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/Legislators/Leadership">
+        All Leadership
+            </a>
+</li>
+<li>
+    <a href="/Legislators/Leadership/Senate">
+        Senate Leadership
+            </a>
+</li>
+<li>
+    <a href="/Legislators/Leadership/House">
+        House Leadership
+            </a>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/Legislators/Senate">Senate</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/Legislators/Members/Senate">
+        All Senators
+            </a>
+</li>
+<li>
+    <a href="/ClerksOffice/Senate">
+        Senate Clerk
+            </a>
+</li>
+<li>
+    <h3>
+        <a href="/cc" target="_blank">
+            Commonwealth Conversations
+                            <span class="fa fa-external-link"></span>
+        </a>
+    </h3>
+</li>
+<li>
+    <h3>
+        <a href="/cleanenergyfuture" target="_blank">
+            Clean Energy Future Tour
+                            <span class="fa fa-external-link"></span>
+        </a>
+    </h3>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/Legislators/House">House</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/Legislators/Members/House">
+        All Representatives
+            </a>
+</li>
+<li>
+    <a href="/ClerksOffice/House">
+        House Clerk
+            </a>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+</li>
+<li class="dropdown yamm-fw">
+        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">Hearings &amp; Events</a>
+        <ul class="dropdown-menu">
+            <li>
+                <div class="yamm-content">
+                    <div class="row">
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/Events">All Hearings &amp; Events</a>
+            </h3>
+            <ul class="list-unstyled">
+<li class="form-group">
+    <label for="eventSearch">Search Events:</label>
+    <form action="/Events/Search" method="get">    <h2 class="sr-only">Search</h2>
+    <label class="sr-only" for="eventSearch">Search Events</label>
+    <div class="typeahead-container">
+        <div class="typeahead-field">
+            <div class="input-group typeahead-query ">
+                <input
+                    id="eventSearch"
+                    name="SearchTerms"
+                    class="searchBox form-control"
+                    type="search"
+                    value=""
+                    data-tt-search-type="Events"
+                    data-tt-search-reset="Events"
+                    data-tt-url="/TypeAheadSearch"
+                    data-tt-branch=""
+                    data-tt-limit="7"
+                    aria-haspopup="true"
+                    aria-autocomplete="list"
+                    autocomplete="off"
+                    placeholder="Search Events..."/>
+                <div class="input-group-btn typeahead-button">
+
+                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="eventSearch"><span class="fa fa-search"></span><span class="sr-only">Search</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/Events/Sessions">Sessions</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/Events/Sessions/Joint">
+        Joint Sessions
+            </a>
+</li>
+<li>
+    <a href="/Events/Sessions/Senate">
+        Senate Sessions
+            </a>
+</li>
+<li>
+    <a href="/Events/Sessions/House">
+        House Sessions
+            </a>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/Events/Hearings">Hearings</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/Events/Hearings/Senate">
+        Senate Committee Hearings
+            </a>
+</li>
+<li>
+    <a href="/Events/Hearings/House">
+        House Committee Hearings
+            </a>
+</li>
+<li>
+    <a href="/Events/Hearings/Joint">
+        Joint Committee Hearings
+            </a>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+<li>
+    <h3>
+        <a href="/Events/SpecialEvents">
+            Special Events
+                    </a>
+    </h3>
+</li>
+    </ul>
+</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+</li>
+<li class="dropdown yamm-fw">
+        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">Committees &amp; Commissions</a>
+        <ul class="dropdown-menu">
+            <li>
+                <div class="yamm-content">
+                    <div class="row">
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/Committees">All Committees</a>
+            </h3>
+            <ul class="list-unstyled">
+<li class="form-group">
+    <label for="committeeSearch">Search Committees:</label>
+    <form action="/Committees/Search" method="get">    <h2 class="sr-only">Search</h2>
+    <label class="sr-only" for="committeeSearch">Search Committees</label>
+    <div class="typeahead-container">
+        <div class="typeahead-field">
+            <div class="input-group typeahead-query ">
+                <input
+                    id="committeeSearch"
+                    name="SearchTerms"
+                    class="searchBox form-control"
+                    type="search"
+                    value=""
+                    data-tt-search-type="Committees"
+                    data-tt-search-reset="Committees"
+                    data-tt-url="/TypeAheadSearch"
+                    data-tt-branch=""
+                    data-tt-limit="7"
+                    aria-haspopup="true"
+                    aria-autocomplete="list"
+                    autocomplete="off"
+                    placeholder="Search Committees..."/>
+                <div class="input-group-btn typeahead-button">
+
+                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="committeeSearch"><span class="fa fa-search"></span><span class="sr-only">Search</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</li>
+<li>
+    <a href="/Download/House_Clerk/Committee%20Book" target="_blank">
+        Committee Book
+                    <span class="fa fa-file-pdf-o"></span>
+    </a>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/Committees">Committees</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/Committees/Joint">
+        Joint Committees
+            </a>
+</li>
+<li>
+    <a href="/Committees/Senate">
+        Senate Committees
+            </a>
+</li>
+<li>
+    <a href="/Committees/House">
+        House Committees
+            </a>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/Events/Hearings">Committee Hearings</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/Events/Hearings/Joint">
+        Joint Committee Hearings
+            </a>
+</li>
+<li>
+    <a href="/Events/Hearings/Senate">
+        Senate Committee Hearings
+            </a>
+</li>
+<li>
+    <a href="/Events/Hearings/House">
+        House Committee Hearings
+            </a>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+<li>
+    <h3>
+        <a href="/Commissions">
+            Commissions
+                    </a>
+    </h3>
+</li>
+    </ul>
+</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+</li>
+<li class="dropdown yamm-fw">
+        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">State House</a>
+        <ul class="dropdown-menu">
+            <li>
+                <div class="yamm-content">
+                    <div class="row">
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/StateHouse/Visit">Visit the State House</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/StateHouse/Tour">
+        On-site Tour
+            </a>
+</li>
+<li>
+    <a href="/VirtualTour" target="_blank">
+        Virtual Tour
+            </a>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/StateHouse/Accessibility">Accessibility</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/StateHouse/AccessibilityForm">
+        Request Accessibility
+            </a>
+</li>
+<li>
+    <a href="/StateHouse/WebAccessibilityPolicy">
+        Web Accessibility Policy
+            </a>
+</li>
+<li>
+    <a href="/StateHouse/AccessibilityInitiatives">
+        Accessibility Initiatives
+            </a>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+        <li>
+            <h3>
+                <a href="/StateHouse/EducationalOpportunities">Educational Opportunities</a>
+            </h3>
+            <ul class="list-unstyled">
+<li>
+    <a href="/StateHouse/EducationalOpportunities/Internships">
+        Internships
+            </a>
+</li>
+<li>
+    <a href="/StateHouse/EducationalOpportunities/StudentGovernmentDay">
+        Student Government Day
+            </a>
+</li>
+<li>
+    <a href="/StateHouse/EducationalOpportunities/CitizensLegislativeSeminar">
+        Citizens&#39; Legislative Seminar
+            </a>
+</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-3">
+    <ul class="list-unstyled">
+<li>
+    <h3>
+        <a href="/CreateYourOwnBill">
+            Create Your Own Bill
+                <span class="newNavItem"><span class="fa fa-certificate"></span>NEW</span>
+                    </a>
+    </h3>
+</li>
+<li>
+    <h3>
+        <a href="/StateHouse/MediaGallery">
+            Media Gallery
+                    </a>
+    </h3>
+</li>
+<li>
+    <h3>
+        <a href="/StateHouse/FAQ">
+            FAQ
+                    </a>
+    </h3>
+</li>
+<li>
+    <h3>
+        <a href="/StateHouse/Contact">
+            Contact Us
+                    </a>
+    </h3>
+</li>
+    </ul>
+</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+</li>
+
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+    <!--/.container -->
+</nav>
+
+    <!-- MAIN CONTENT -->
+    <span id="mainContent" class="sr-only"></span>
+    <main>
+        
+
+<div class="titleBar clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-7 col-md-8">
+                <ol class="breadcrumb-titleBar">
+                        <li class="hidden-print">
+                            <a href="/Laws/GeneralLaws">General Laws</a>
+                        </li>
+                        <li>
+                            <a href="/Laws/GeneralLaws/PartI">
+                                <span>Part I</span>
+                                <span class="visible-print-inline">ADMINISTRATION OF THE GOVERNMENT</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Laws/GeneralLaws/PartI/TitleII">
+                                <span>Title II</span>
+                                <span class="visible-print-inline">EXECUTIVE AND ADMINISTRATIVE OFFICERS OF THE COMMONWEALTH</span>
+                            </a>
+                        </li>
+                        <li class="visible-print-block">
+                            <a href="#">
+                                <span>Chapter 12C</span>
+                                <span>CENTER FOR HEALTH INFORMATION AND ANALYSIS</span>
+                            </a>
+                        </li>
+                </ol>
+                <h1>Chapter 12C</h1>
+            </div>
+            <div class="hidden-xs col-sm-5 col-md-4">
+                <div class="typeahead-wrapper-md"><form action="/Search" method="get">    <h2 class="sr-only">Search</h2>
+    <label class="sr-only" for="detailSearch">Search the Legislature</label>
+    <div class="typeahead-container">
+        <div class="typeahead-field">
+            <div class="input-group typeahead-query ">
+                <input
+                    id="detailSearch"
+                    name="SearchTerms"
+                    class="searchBox form-control"
+                    type="search"
+                    value=""
+                    data-tt-search-type="Bills, GeneralLaws, SessionLaws, Committees, Legislators, Events, Journals, Reports, Videos, Amendments"
+                    data-tt-search-reset="Bills, GeneralLaws, SessionLaws, Committees, Legislators, Events, Journals, Reports, Videos, Amendments"
+                    data-tt-url="/TypeAheadSearch"
+                    data-tt-branch=""
+                    data-tt-limit="7"
+                    aria-haspopup="true"
+                    aria-autocomplete="list"
+                    autocomplete="off"
+                    placeholder="Search the Legislature..."/>
+                <div class="input-group-btn typeahead-button">
+
+                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="detailSearch"><span class="fa fa-search"></span><span class="sr-only">Search</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /TITLEBAR -->
+
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 sidebarWrap">
+    <aside id="tableOfContentsWrapper" class="sidebar clearfix" data-expanded="false">
+        <h2 class="inlineHeader">General Laws</h2>
+         <form action="/GeneralLaws/GoTo" method="post">      <div class="col-xs-12 form-inline generalLawsDirect">
+          <h3 class="h4">Go Directly to a General Law</h3>
+          <div class="form-group">
+              <label for="ChapterGoTo">Chapter</label>
+              <input class="form-control" data-val="true" data-val-required="The Chapter field is required." id="ChapterGoTo" name="ChapterGoTo" type="text" value="" />
+              <span class="field-validation-valid" data-valmsg-for="ChapterGoTo" data-valmsg-replace="true"></span>
+          </div>
+          <div class="form-group">
+              <label for="SectionGoTo">Section</label>
+              <input class="form-control" id="SectionGoTo" name="SectionGoTo" type="text" value="" />
+              <span class="field-validation-valid" data-valmsg-for="SectionGoTo" data-valmsg-replace="true"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Go <span class="sr-only">to General Law</span><span class="fa fa-angle-right"></span></button>
+      </div>
+</form>
+        <a href="#" id="tableOfContentsToggle" class="pull-right hidden-xs hidden-sm"><span class="fa fa-caret-right fa-2x"></span></a>
+        <a class="hidden-xs hidden-sm sr-only sr-only-focusable" href="#skipTo">Skip to Content</a>
+        <div id="treeviewCollapse" class="hidden-xs hidden-sm collapse in">
+            <div id="jstree">
+            </div>
+        </div>
+    </aside>
+</div>
+            <div class="col-xs-12 col-md-8">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="btn-toolbar pull-right" role="toolbar">
+    <div class="btn-group" role="group">
+        <button class="btn btn-sm btn-secondary printButton" type="button" onclick="javascript:window.print();" aria-haspopup="true"><span class="fa fa-print"></span>&nbsp;Print Page</button>
+    </div>
+	<div class="btn-group" role="group">
+	        <button class="btn btn-sm btn-secondary prevButton" onclick="location.href ='/Laws/GeneralLaws/PartI/TitleII/Chapter12B';"><span class="fa fa-angle-left"></span> Prev<span class="sr-only">ious</span></button>
+	    	        <button class="btn btn-sm btn-secondary nextButton" onclick="location.href = '/Laws/GeneralLaws/PartI/TitleII/Chapter13';">Next <span class="fa fa-angle-right"></span></button>
+	</div>
+</div>
+
+                        <hr class="visible-print-block" />
+                        <h2 id="skipTo" class="h3 genLawHeading hidden-print">Chapter 12C: <small>CENTER FOR HEALTH INFORMATION AND ANALYSIS</small>
+                        </h2>
+
+                        <ul class="generalLawsList">
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section1">
+                                            <span class="section">Section 1</span>
+                                            <span class="sectionTitle">Definitions</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section2">
+                                            <span class="section">Section 2</span>
+                                            <span class="sectionTitle">Center for health information and analysis; executive director; term; removal</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section2A">
+                                            <span class="section">Section 2A</span>
+                                            <span class="sectionTitle">Health information and analysis oversight council;  members;  meetings;  powers and duties</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section3">
+                                            <span class="section">Section 3</span>
+                                            <span class="sectionTitle">Agents, officers and employees; appointment; powers and duties</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section4">
+                                            <span class="section">Section 4</span>
+                                            <span class="sectionTitle">Salaries; personnel regulations</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section5">
+                                            <span class="section">Section 5</span>
+                                            <span class="sectionTitle">Adoption of rules and regulations</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section6">
+                                            <span class="section">Section 6</span>
+                                            <span class="sectionTitle">Powers</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section7">
+                                            <span class="section">Section 7</span>
+                                            <span class="sectionTitle">Payment by acute hospital, ambulatory surgical center or surcharge payor for estimated expenses of center</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section8">
+                                            <span class="section">Section 8</span>
+                                            <span class="sectionTitle">Reporting requirements for institutional providers and their parent organization and other affiliates</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section9">
+                                            <span class="section">Section 9</span>
+                                            <span class="sectionTitle">Reporting requirements for registered provider organizations</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section10">
+                                            <span class="section">Section 10</span>
+                                            <span class="sectionTitle">Reporting requirements for private and public health care payers and third-party administrators</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section11">
+                                            <span class="section">Section 11</span>
+                                            <span class="sectionTitle">Timely reporting of information required under Secs. 8, 9 and 10</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section12">
+                                            <span class="section">Section 12</span>
+                                            <span class="sectionTitle">Collection, storage and maintenance of data collected under Secs. 8, 9 and 10; payer and provider claims database; access to data</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section13">
+                                            <span class="section">Section 13</span>
+                                            <span class="sectionTitle">Uniform provider licensure reporting system</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section14">
+                                            <span class="section">Section 14</span>
+                                            <span class="sectionTitle">Standard quality measure set</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section15">
+                                            <span class="section">Section 15</span>
+                                            <span class="sectionTitle">Betsy Lehman center for patient safety and medical error reduction; board; education and research program</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section16">
+                                            <span class="section">Section 16</span>
+                                            <span class="sectionTitle">Annual report based on the information submitted under Secs. 8, 9 and 10; hearing</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section17">
+                                            <span class="section">Section 17</span>
+                                            <span class="sectionTitle">Attorney general review and analysis of information submitted under Secs. 8, 9 and 10 and under Sec. 8 of chapter 6D; authority to compel production of documents, answers to interrogatories and testimony</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section18">
+                                            <span class="section">Section 18</span>
+                                            <span class="sectionTitle">Analysis of data received under Secs. 6, 9 and 10 to identify excessive increases in health status adjusted total medical expense</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section19">
+                                            <span class="section">Section 19</span>
+                                            <span class="sectionTitle">Review and comment upon capital expenditure projects requiring determination of need under Sec. 25C of chapter 111</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section20">
+                                            <span class="section">Section 20</span>
+                                            <span class="sectionTitle">Consumer health information website</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section21">
+                                            <span class="section">Section 21</span>
+                                            <span class="sectionTitle">Continuing program of investigation and study of the uninsured and underinsured</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section21A">
+                                            <span class="section">Section 21A</span>
+                                            <span class="sectionTitle">Continuing program of investigation and study of mental health and substance use disorders</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section22">
+                                            <span class="section">Section 22</span>
+                                            <span class="sectionTitle">Conditions for reimbursement or payment for treatment of injured workers under chapter 152 or from governmental unit; penalty for noncompliance</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Laws/GeneralLaws/PartI/TitleII/Chapter12C/Section23">
+                                            <span class="section">Section 23</span>
+                                            <span class="sectionTitle">Transfer of funds to Community Hospital Reinvestment Trust Fund</span>
+                                        </a>
+                                    </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/bundles/sidebar?v=DG67mH-eyz8uLnHhq37PbBssJlInvETuZedCPW_xjqI1"></script>
+
+<script src="/bundles/treeview?v=3FZ5e6or7SmtkikpiMwU7XBKa3WfQIXsAvAzijLPCqs1"></script>
+
+
+<script>
+    $(document).ready(function () {
+        initJsTree('/Laws/GeneralLaws/GetJsTree', 'I', 'II', '12C');
+    });
+</script>
+
+
+    </main>
+</div>
+<!--Footer-->
+<footer>
+    <h2 class="sr-only">Site Information & Links</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <h3>Helpful Massachusetts Links</h3>
+                <ul class="list-unstyled">
+                    <li><a target="_blank" href="http://www.mass.gov/">Mass.gov</a></li>
+                    <li><a target="_blank" href="http://jobs.hrd.state.ma.us/">Commonwealth Employment Opportunities</a></li>
+                    <li><a target="_blank" href="http://www.sec.state.ma.us/">Secretary of the Commonwealth</a></li>
+                    <li><a target="_blank" href="http://massdot.state.ma.us/">Mass DOT</a></li>
+                    <li><a target="_blank" href="http://appointments.state.ma.us/">Boards & Commissions</a></li>
+                    <li><a target="_blank" href="http://www.mass.gov/ago/doing-business-in-massachusetts/public-charities-or-not-for-profits/">Non-Profits & Charities</a></li>
+                    <li><a target="_blank" href="http://libraries.state.ma.us/">Libraries</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <h3>Quick Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="/StateHouse/Accessibility">Accessibility</a></li>
+                    <li><a href="/MyLegislature">MyLegislature</a></li>
+                    <li><a href="/Laws/GeneralLaws">Massachusetts General Laws</a></li>
+                    <li><a href="/Search/FindMyLegislator">Find My Legislator</a></li>
+                    <li><a href="/StateHouse/Visit">Visit the State House</a></li>
+                    <li><a href="/StateHouse/Contact">Contact Us</a></li>
+                    <li><a href="/StateHouse/Privacy">Privacy Policy</a></li>
+                    <li><a href="/StateHouse/TermsAndConditions">Terms And Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-6 copyright">
+                Copyright &copy; 2019 The General Court of the Commonwealth of Massachusetts
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--Modals-->
+<div class="modal fade" tabindex="-1" role="dialog" id="registrationModal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content registrationModal">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Register for MyLegislature</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5">
+                        <h5 class="text-center">Register With An Existing Account</h5>
+                        <button onclick="window.location = '/Account/ExternalLogin?provider=Facebook'" type="button" class="btn btn-facebook btn-lg btn-block oauthButton"><span class="fa fa-facebook-official fa-fw"></span> Sign in<span class="hidden-xs hidden-sm"> with Facebook</span></button>
+<button onclick="window.location = '/Account/ExternalLogin?provider=Google'" type="button" class="btn btn-google btn-lg btn-block oauthButton"><span class="fa fa-google-plus fa-fw"></span> Sign in<span class="hidden-xs hidden-sm"> with Google</span></button>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 vDivide">
+                        <h5 class="text-center">Register With Your Email Address</h5>
+<form action="/Account/Register" data-ajax="true" data-ajax-begin="inProgress" data-ajax-method="POST" data-ajax-success="registrationModalFormOnSuccess" id="registrationModalForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="WIM_LJiypFBX-MY6_zzuGYN7cLl0HjqCEW0Xntt_yub1Pb4THdYZqPE0MFpSCVFcj_8XDQRYjZilgz-VMCvJ5T_6uzU1" />
+
+<div class="form-group">
+    <label class="sr-only" for="Email">Email Address</label>
+    <div class="input-group">
+        <span class="input-group-addon"><span class="fa fa-user fa-fw"></span></span>
+        <input class="form-control" data-val="true" data-val-email="Invalid email address." data-val-required="Email address is required." id="Email" name="Email" placeholder="Email Address" type="email" value="" />
+    </div>
+    <span class="field-validation-valid help-block" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group">
+    <label class="sr-only" for="Password">Password</label>
+    <div class="input-group">
+        <span class="input-group-addon"><span class="fa fa-lock fa-fw"></span></span>
+        <input aria-label="Passwords must contain at least one number, lowercase and uppercase letters, and be seven or more characters long." class="form-control fnPasswordStrength" data-placement="top" data-toggle="password-tooltip" data-val="true" data-val-required="Password required." id="Password" name="Password" placeholder="Password" type="password" />
+    </div>
+    <span class="field-validation-valid help-block" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group">
+    <label class="sr-only" for="PasswordConfirmation">Confirm Password</label>
+    <div class="input-group">
+        <span class="input-group-addon"><span class="fa fa-lock fa-fw"></span></span>
+        <input class="form-control" data-val="true" data-val-equalto="Passwords do not match." data-val-equalto-other="*.Password" data-val-required="Password confirmation required." id="PasswordConfirmation" name="PasswordConfirmation" placeholder="Confirm Password" type="password" />
+    </div>
+    <span class="field-validation-valid help-block" data-valmsg-for="PasswordConfirmation" data-valmsg-replace="true"></span>
+</div>
+<button class="btn btn-primary btn-lg btn-default actionButton fnStart">Register</button>
+<button class="btn btn-primary btn-lg btn-default actionButton fnEnd" style="display: none">Registering...</button></form>                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="switchModal('#loginModal')">Already have an account? Sign in here.</button>
+                <button type="button" class="btn btn-secondary" onclick="switchModal('#forgotPasswordModal')">Forgot Password?</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="loginModal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content loginModal">
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Sign in to MyLegislature</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row fnProgressLoader">
+                    <div class="col-xs-12 col-sm-5">
+                        <h5 class="text-center sr-only">Sign In With Your Facebook or Google+ Account</h5>
+                        <button onclick="window.location = '/Account/ExternalLogin?provider=Facebook'" type="button" class="btn btn-facebook btn-lg btn-block oauthButton"><span class="fa fa-facebook-official fa-fw"></span> Sign in<span class="hidden-xs hidden-sm"> with Facebook</span></button>
+<button onclick="window.location = '/Account/ExternalLogin?provider=Google'" type="button" class="btn btn-google btn-lg btn-block oauthButton"><span class="fa fa-google-plus fa-fw"></span> Sign in<span class="hidden-xs hidden-sm"> with Google</span></button>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 vDivide">
+                        <h5 class="text-center sr-only">Sign In With Your MyLegislature Account</h5>
+<form action="/Account/Login?isModal=True" data-ajax="true" data-ajax-begin="inProgress" data-ajax-complete="loginModalFormOnComplete" data-ajax-method="POST" id="loginModalForm" method="post" role="form"><input name="__RequestVerificationToken" type="hidden" value="4MdO0hoajz5DnxArTF6GFQ7ZZTseVQMuaqPZlGph5a56SVqikcLDzRj3E02K8OWgwhzIn3jvyjDZaU8SpprX9n1BDGs1" />
+<div class="form-group">
+    <label class="sr-only" for="Email">Email</label>
+    <div class="input-group">
+        <span class="input-group-addon"><span class="fa fa-user fa-fw"></span></span>
+        <input class="form-control" data-val="true" data-val-email="Invalid email address." data-val-required="Email address is required." id="Email" name="Email" placeholder="Email Address" type="text" value="" />
+    </div>
+    <span class="field-validation-valid help-block" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group passwordField">
+    <label class="sr-only" for="Password">Password</label>
+    <div class="input-group">
+        <span class="input-group-addon"><span class="fa fa-lock fa-fw"></span></span>
+        <input class="form-control" data-val="true" data-val-required="Password required." id="Password" name="Password" placeholder="Password" type="password" />
+    </div>        
+    <span class="field-validation-valid help-block" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+</div>
+<div class="form-group clearfix">
+    <a class="forgotPassword" aria-haspopup="true" data-toggle="modal" data-target="#forgotPasswordModal">Forgot Password?</a>
+</div>
+<div class="center-block">
+    <button type="submit" class="btn btn-primary btn-lg btn-default actionButton fnStart">Sign In</button>
+    <button class="btn btn-primary btn-lg btn-default actionButton fnEnd" style="display: none">Signing In...</button>
+</div></form>                    </div>
+                </div>
+            </div>
+          <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" onclick="switchModal('#registrationModal')">Not Registered? Click here.</button>
+                <a class="text-center visible-xs-block" href="/MyLegislature/About">Learn More Here! &raquo;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="forgotPasswordModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Forgot Password</h4>
+            </div>
+            <div class="modal-body">
+<form action="/Account/ForgotPassword" data-ajax="true" data-ajax-complete="forgotPasswordModalFormOnComplete" data-ajax-method="POST" id="forgotPasswordModalForm" method="post" onsubmit="if($(this).valid()){ $(this).find(&#39;.fnEnd&#39;).show(); $(this).find(&#39;.fnStart&#39;).hide(); }" role="form">    <p><strong>Please enter your email address.</strong> If there is an account associated with that address, a password reset link will be mailed to you.</p>
+<input name="__RequestVerificationToken" type="hidden" value="AHGwmwPwd2Vh924OpseIPriTYlkR36D5YBdicKPP09RsopM2sSf9pGcUN8DUPlL3jtjSjSAZ8zlNzN_dyUn5b-vUECc1" />    <div class="row">
+        <div class="form-group clearfix">
+            <div class="col-sm-12 col-md-9">
+                <label class="sr-only" for="EmailAddress">Email Address</label>
+                <input class="form-control" data-val="true" data-val-email="Invalid email address." data-val-required="Email required." id="EmailAddress" name="EmailAddress" placeholder="Email Address" type="text" value="" />
+                <span class="field-validation-valid help-block" data-valmsg-for="EmailAddress" data-valmsg-replace="true"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 resetButtons">
+            <button type="submit" id="passwordResetButton" class="btn btn-danger fnStart">Reset Password</button>
+            <button type="button" class="btn btn-danger fnEnd" style="display: none">Processing...</button>
+            <button data-dismiss="modal" type="button" class="btn btn-secondary">Cancel</button>
+        </div>
+    </div>
+</form>            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade fnModalStack" tabindex="-1" role="dialog" id="exclusiveFeatureModal">
+  <div class="modal-dialog exclusiveModal" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal" type="button" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Sign In Required</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+        	<div class="row">
+        	  <div class="col-xs-12">
+        	    <p class="exclusiveModalContent">This feature is exclusive to users of<span>MyLegislature</span></p>
+        	  </div>
+        	  <div class="col-xs-6">
+        	    <button type="button" onclick="switchModal('#loginModal')" class="btn btn-primary btn-lg btn-block">Sign In</button>
+        	  </div>
+        	  <div class="col-xs-6">
+        	    <button type="button" onclick="switchModal('#registrationModal')" class="btn btn-primary btn-lg btn-block">Register</button>
+        	  </div>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="locationModal" class="modal fade fnModalRemoveData fnModalStack" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            
+        </div>
+    </div>
+</div>
+
+<div id="billModal" class="modal fade fnModalRemoveData modalFixedHeight" tabindex="-1" role="dialog">
+    <div class="modal-dialog printPreviewModal" role="document">
+        <div class="modal-content">
+            
+        </div>
+    </div>
+</div>
+<div id="amendmentModal" class="modal fade fnModalRemoveData modalFixedHeight" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            
+        </div>
+    </div>
+</div>
+<div id="downloadModal" class="modal fade fnModalRemoveData modalFixedHeight" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            
+        </div>
+    </div>
+</div>
+<div class="modal" id="mobileSearch" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Search The Legislature</h4>
+            </div>
+            <div class="modal-body">
+                <form action="/Search" class="container" method="get">    <h2 class="sr-only">Search</h2>
+    <label class="sr-only" for="fullSearch">Search the Legislature</label>
+    <div class="typeahead-container">
+        <div class="typeahead-field">
+            <div class="input-group typeahead-query input-group-lg">
+                <input
+                    id="fullSearch"
+                    name="SearchTerms"
+                    class="searchBox form-control"
+                    type="search"
+                    value=""
+                    data-tt-search-type="Bills, GeneralLaws, SessionLaws, Committees, Legislators, Events, Journals, Reports, Videos, Amendments"
+                    data-tt-search-reset="Bills, GeneralLaws, SessionLaws, Committees, Legislators, Events, Journals, Reports, Videos, Amendments"
+                    data-tt-url="/TypeAheadSearch"
+                    data-tt-branch=""
+                    data-tt-limit="7"
+                    aria-haspopup="true"
+                    aria-autocomplete="list"
+                    autocomplete="off"
+                    placeholder="Search the Legislature..."/>
+                <div class="input-group-btn typeahead-button">
+
+                    <button type="submit" class="btn btn-primary searchButton" aria-labelledby="fullSearch"><span class="fa fa-search"></span><span class="sr-only">Search</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="badgeModal" class="modal fade fnModalRemoveData fnModalStack" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+    </div>
+  </div>
+</div>
+
+<script src="/bundles/bootstrap?v=wMFBIIZ6OsUCe1qOSlRNS_6hGBJgfCE05Vh1GzCppYo1"></script>
+<script src="/bundles/common?v=4mkNq7SdyUH_UarpAod8AkeiJ5ptufm-bsqAuovSpeQ1"></script>
+<script src="/bundles/validate?v=S3kD1lOwDYpGFma3pYezc1eM5lZqQPgYj__GN1KhoVo1"></script>
+
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/js/jquery-yammcessible.js"></script>
+
+
+<script>
+    $("document").ready(function() {
+        $('.yamm').accessibleMegaMenu();
+    });
+</script>
+</body>
+</html>

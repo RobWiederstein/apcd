@@ -1,0 +1,342 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Division of State Documents</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Step 1 : Link to MD favicon -->
+    <link rel="shortcut icon" href="egov/img/icons/favicon.ico">
+    <!-- Necessary Bootstrap.css for responsive design -->
+    <link href="/egov/frameworks/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/egov/css/agency-styles1.css" rel="stylesheet">
+    <link href="/egov/css/agency-header.css" rel="stylesheet">
+    <!--[if ie 8]>
+        <link id="css_IE8" href="/egov/css/ie/ie8.css" rel="stylesheet" media="screen" />
+    <![endif]-->
+    <!--[if ie 7]>
+        <link id="css_IE7" href="/egov/css/ie/ie7.css" rel="stylesheet" media="screen" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="/egov/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <script src="/egov/js/jquery-1.8.2.min.js"></script>
+    <!--<link rel="stylesheet" href="/egov/css/jquery-ui-1.10.3.min.css" />
+    <script src="/egov/js/jquery-ui-1.10.3.min.js"></script>-->
+
+     <!--Step 4 : Necessary .js for  Statewide nav bar script -->
+	<script type="text/javascript" src="/egov/js/yui-min.js"></script>
+    
+</head>
+<body>
+    <div class="container" id="MobileNav">
+        <div class="skipNav">
+            <a href="#primary_content_Block">Skip to Main Content</a>
+        </div>
+        <div id="mdgov_globalSiteWrapper">
+            <div class="row-fluid">
+                <div id="mdgov_TopSliverBar" class="clearfix">
+                    <div id="mdgov_TopSliverBarContent" class="clearfix">
+                        <div id="mdgov_sliverLeft">
+                            <div id="mdgov_mobileNavButton" class="hidden-desktop">
+								<a class="show" href="#/"><i class="icon-white icon-align-justify">&nbsp;</i> <span>Menu</span> </a>
+                                <a class="hide" href="#MobileNav"><i class="icon-white icon-align-justify">&nbsp;</i> <span>Menu</span> </a>
+                            </div>
+                        </div>
+                        <div id="mdgov_sliverRight">
+                            <!-- STEP 4: displays statewide nav bar -->
+                            <script type="text/javascript">
+                                YUI().use(function (Y) {
+                                    var url = "https://www.maryland.gov/branding/statewideNavigationDefer.js",
+                                    obj = Y.Get.script(url, {
+                                        onSuccess: function () {
+                                            document.getElementById('mdgov_sliverRight').innerHTML = showStatewideNavigation("white");
+                                        }
+                                    });
+                                });
+                            </script>
+                            <noscript>You must have Javascript enabled to see this menu.</noscript>
+                            <!-- END statewide nav bar -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Begin Header -->
+            <div id="headerBlock" class="row-fluid">
+                <div id="header" class="span12">
+                    <div id="headerBackground">
+                        <div class="headerBgImg clearfix">
+                            <div class="row-fluid">
+                                <div id="agency_branding" class="clearfix">
+                                    <div id="mdgov_crownLogo" class="span2 clearfix">
+                                        <div id="mdgov_homeLink">
+                                            <!-- Step 2 : MD Crown logo and link -->
+                                            <a href="http://www.maryland.gov/">
+                                                <span class="hidden-accessible">Maryland.gov Home</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="mdgov_agencyName" class="span6 clearfix">
+                                        <div id="mdgov_agencyTitle">
+                                            <!-- Step 3 : Add Agency Title and link to home page -->
+                                            <a href="#">
+                                               <img src="/egov/img/DSD_TITLE.png" alt="DIVISION OF STATE DOCUMENTS" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="mdgov_agencyHeader" class="span4 clearfix">
+                                        <div id="mdgov_enterpriseSearch" class="clearfix">
+                                            <div id="mdgov_enterpriseSearchContainer">
+                                                <div id="mdgov_searchInput">
+                                                    <!-- Step 7 : statewide search code -->
+                                                    <form method="GET" action="http://www.maryland.gov/pages/search.aspx">
+                                                        <input type="hidden" name="name" value="My Agency Name" />
+                                                        <input type="hidden" name="site" value="gpedakpy1y0" />
+                                                        <label for="searchInputBox" class="hidden-accessible">Search</label>
+                                                   <!--     <input type="text" id="searchInputBox" name="q" class="mdgov_searchInputBox"
+                                                               value="Search" onblur="if(this.value=='')this.value='Search';"
+                                                               onfocus="if(this.value=='Search')this.value='';" />
+                                                        <div class="mdgov_searchButton btn btn-primary searchButtonDiv">
+                                                            <input type="image" alt="Search" src="egov/img/icons/search.png" class="fillImageButton" />
+                                                        </div>-->
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mdgov_socialNav clearfix">
+                                            <!-- Step 6: Configure Agency social media icons and links -->
+                                         <!--   <ul class="cl_base_hNav cl_socialNav">
+                                                <li><a href="#/" class="sm-facebook" title="Facebook">Facebook</a> </li>
+                                                <li><a href="#/" class="sm-twitter" title="Twitter">Twitter</a> </li>
+                                                <!-- <li><a href="#" class="sm-googleplus" title="Google+">Google Plus</a></li>-->
+                                            <!--    <li><a href="#/" class="sm-youtube" title="YouTube">YouTube</a> </li>
+                                                <li><a href="#/" class="sm-flickr" title="Flickr">Flickr</a> </li>
+                                                <li><a href="http://www.maryland.gov/pages/social_media.aspx" class="sm-all" title="MD Social Media Directory">Social Media Directory</a> </li>
+                                            </ul>
+                                            <!--if no Agency social media,replace above UL with code below-->
+                                            <!--<ul class="cl_base_hNav cl_socialNavDirectory">
+                            			        <li><a href="http://www.maryland.gov/pages/social_media.aspx" class="sm-directory" title="MD Social Media Directory">MD Social Media Directory</a></li>
+                        				    </ul>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header -->
+            <div id="navBlock" class="row-fluid">
+                <div id="mdgov_enterpriseNavigation" class="clearfix">
+                    <!-- Step 9 : Add Main navigation links -->
+                    <nav>
+                        <ul>
+                            <li><a href="/DSDHome.html" class="level0">Home</a></li>
+                   		 	<li><a href="http://www.sos.state.md.us" class="level0">SOS</a></li>
+                    		<li><a href="/FAQ.html" class="level0">FAQ</a></li>
+                    		<li><a href="/Publications.html" class="level0">Publications</a></li>
+                    		<li><a href="/Holiday.html" class="level0">State Holidays</a></li>
+                    		<li><a href="/ContactUs.htm" class="level0">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <noscript>
+            <div class="row-fluid">
+                <div class="uiMessage">
+                    <strong>Notice:</strong> JavaScript is not available in your browser. Some enhanced features will not be available until JavaScript is enabled.
+                </div>
+            </div>
+            </noscript>
+            <div class="row-fluid">
+                <div id="primary_content_Block">
+                    <div id="primary_left_col" class="span3 leftMargin0">
+                        <div class="mdgov_contentWrapper mdgov_subNav">
+                            <section id="subNav1" class="primary_left_col_list">
+                                <header>
+                                    <!-- Step 14: Sub Nav menus -->
+                                    <h2 data-target="subNav1" align="center">COMAR</h2>
+                                </header>
+                                <div class="subNavWrapper">
+                                    <ul class="cl_iconNav">
+                                       <li><a href="/COMAR/ComarHome.html">COMAR Online</a></li>
+             						<li><a href="/Publications.html">COMAR Order Forms</a></li>
+              						<li><a href="/Depositories.html">Depository Libraries</a></li>
+               						<li><a href="/RRE/RegReview.html">Regulatory Review & Evaluation</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section id="subNav2" class="primary_left_col_list">
+                                <header>
+                                    <h2 data-target="subNav2">Maryland Register</h2>
+                                </header>
+                                <div class="subNavWrapper">
+                                    <ul class="cl_iconNav">
+                                    <li><a href="/MDR/mdregister.html">Maryland Register Online</a></li>
+                                    <li><a href="/Publications.html">Register Order Forms</a></li>
+									<li><a href="/MDR/PublicMeetings.html">Public Meetings</a></li>
+                                    <li><a href="/PDF/CumulativeIndex.pdf" target="_blank">Cumulative Index (quarterly)</a></li>
+                                    <li><a href="/PDF/CumulativeTable.pdf" target="_blank">Cumulative Table <br>(bi-weekly)</a></li>
+                                    <!--<li><a href="#/">Link 5</a></li>-->
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div id="primary_right_col" class="span9">
+                        <div class="mdgov_contentWrapper">
+<form name="Form1" method="post" action="SubtitleSearch.aspx?search=10.25.06" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEzMjkzNzE0NzEPZBYCAgIPZBYEAgMPDxYCHgRUZXh0BR4yMSByZWNvcmRzIG1hdGNoIHlvdXIgcmVxdWVzdC5kZAIFDzwrAAsBAA8WCB4IRGF0YUtleXMWAB4LXyFJdGVtQ291bnQCFR4JUGFnZUNvdW50AgEeFV8hRGF0YVNvdXJjZUl0ZW1Db3VudAIVZBYCZg9kFioCAQ9kFgRmD2QWAmYPFQE9PGEgaHJlZj1nZXRmaWxlLmFzcHg/ZmlsZT0xMC4yNS4wNi4wMC5odG0+MTAuMjUuMDYuMDAuaHRtPC9hPmQCAQ8PFgIfAAW2AjEwLjI1LjA2LjAwLiBUaXRsZSAxMCBNQVJZTEFORCBERVBBUlRNRU5UIE9GIEhFQUxUSCBTdWJ0aXRsZSAyNSBNQVJZTEFORCBIRUFMVEggQ0FSRSBDT01NSVNTSU9OIENoYXB0ZXIgMDYgTWFyeWxhbmQgTWVkaWNhbCBDYXJlIERhdGEgQmFzZSBhbmQgRGF0YSBDb2xsZWN0aW9uIEF1dGhvcml0eTogSGVhbHRoLUdlbmVyYWwgQXJ0aWNsZSwgwqcxOS0xMDEsIDE5LTEwMyhjKTMpICg0KSAoNykgYW5kICg4KSAxOS0xMDkoYSkxKSAoNikgYW5kICg3KSAxOS0xMzMsIDE5LTEzNCwgYW5kIDE5LTEzOCwgQW5ub3RhdGVkIENvZGUgb2YgTWFyeWxhbmRkZAICD2QWBGYPZBYCZg8VAT08YSBocmVmPWdldGZpbGUuYXNweD9maWxlPTEwLjI1LjA2LjAxLmh0bT4xMC4yNS4wNi4wMS5odG08L2E+ZAIBDw8WAh8ABagDMTAuMjUuMDYuMDEuIDAxIFNjb3BlIGFuZCBQdXJwb3NlLi4gVGhlc2UgcmVndWxhdGlvbnMgZXN0YWJsaXNoIGFwcHJvcHJpYXRlIG1ldGhvZHMgZm9yIGNvbGxlY3RpbmcgYW5kIGNvbXBpbGluZyBTdGF0ZXdpZGUgZGF0YSBvbiBzZWxlY3RlZCBoZWFsdGggY2FyZSBzZXJ2aWNlcyBwcm92aWRlZCBlaXRoZXIgdW5kZXIgYSBNYXJ5bGFuZCBjb250cmFjdCBvciB0byBNYXJ5bGFuZCByZXNpZGVudHMgYnkgaGVhbHRoIGNhcmUgcHJhY3RpdGlvbmVycyBhbmQgZmFjaWxpdGllczpBLiBGcm9tIHBheW9yczsuIEIuIEZyb20gdGhpcmQgcGFydHkgYWRtaW5pc3RyYXRvcnM7IGFuZC4gQy4gUmVnYXJkaW5nIHByb3ZpZGVycyBmb3Igd2hvbSB0aGUgTWFyeWxhbmQgSGVhbHRoIENhcmUgQ29tbWlzc2lvbiBvdGhlcndpc2UgcmVjZWl2ZXMgZGF0YS4uIGRkAgMPZBYEZg9kFgJmDxUBPTxhIGhyZWY9Z2V0ZmlsZS5hc3B4P2ZpbGU9MTAuMjUuMDYuMDIuaHRtPjEwLjI1LjA2LjAyLmh0bTwvYT5kAgEPDxYCHwAF8wMxMC4yNS4wNi4wMi4gMDIgRGVmaW5pdGlvbnMuLiBBLiBJbiB0aGlzIGNoYXB0ZXIsIHRoZSBmb2xsb3dpbmcgdGVybXMgaGF2ZSB0aGUgbWVhbmluZ3MgaW5kaWNhdGVkLi4gQi4gVGVybXMgRGVmaW5lZC4uIDEpICJBZGp1ZGljYXRlZCIgbWVhbnMgcGFpZCwgcmVzb2x2ZWQsIG9yIHNldHRsZWQuLiAyKSDigJxCZWhhdmlvcmFsIGhlYWx0aCBzZXJ2aWNlcyIgbWVhbnMgbWVudGFsIGhlYWx0aCBzZXJ2aWNlcyBvciBhbGNvaG9sIGFuZCBzdWJzdGFuY2UgYWJ1c2Ugc2VydmljZXMuMykgIkNhcGl0YXRlZCBlbmNvdW50ZXIiIG1lYW5zIGEgaGVhbHRoIGNhcmUgdmlzaXQgaW4gd2hpY2ggYSBoZWFsdGggY2FyZSBwcmFjdGl0aW9uZXIgb3Igb2ZmaWNlIGZhY2lsaXR5IHByb3ZpZGVzIGEgc2VydmljZSBwdXJzdWFudCB0byBhbiBhZ3JlZW1lbnQgd2l0aCBhIHJlcG9ydGluZyBlbnRpdHkgZm9yIHJlaW1idXJzZW1lbnQgb24gYW4gYWdncmVnYXRlIGZpeGVkIHN1bSBvciBwZXIgZGQCBA9kFgRmD2QWAmYPFQE9PGEgaHJlZj1nZXRmaWxlLmFzcHg/ZmlsZT0xMC4yNS4wNi4wMy5odG0+MTAuMjUuMDYuMDMuaHRtPC9hPmQCAQ8PFgIfAAXlAzEwLjI1LjA2LjAzLiAwMyBQZXJzb25zIERlc2lnbmF0ZWQgdG8gUHJvdmlkZSBEYXRhIHRvIHRoZSBDb21taXNzaW9uLi4gQS4gUGF5b3JzLiBCeSBEZWNlbWJlciAzMSBvZiBlYWNoIHllYXIsIHRoZSBDb21taXNzaW9uIHNoYWxsIG1ha2UgYXZhaWxhYmxlIGEgbGlzdCBvZiBlYWNoIHBheW9yIG1lZXRpbmcgdGhlIGNyaXRlcmlhIGZvciBkZXNpZ25hdGlvbiBhcyBhIHJlcG9ydGluZyBlbnRpdHkgYW5kIHdobyBzaGFsbCBmaWxlIHRoZSByZXBvcnRzIHVuZGVyIHRoaXMgY2hhcHRlciBpbiB0aGUgZm9sbG93aW5nIHllYXIuMSkgVGhlIENvbW1pc3Npb24gc2hhbGwgZGVzaWduYXRlIGFzIGEgcmVwb3J0aW5nIGVudGl0eSBlYWNoIHBheW9yIHdob3NlIHRvdGFsIGxpdmVzIGNvdmVyZWQgZXhjZWVkcyAxLDAwMCwgYXMgcmVwb3J0ZWQgdG8gdGhlIE1hcnlsYW5kIEluc3VyYW5jZSBBZG1pbmlzdHJhdGlvbi4yKSBUaGUgQ29tbWlzc2lvbiBzaGFsbCBkZGQCBQ9kFgRmD2QWAmYPFQE9PGEgaHJlZj1nZXRmaWxlLmFzcHg/ZmlsZT0xMC4yNS4wNi4wNC5odG0+MTAuMjUuMDYuMDQuaHRtPC9hPmQCAQ8PFgIfAAXYAzEwLjI1LjA2LjA0LiAwNCBQcm9jZXNzIGZvciBTdWJtaXR0aW5nIERhdGEuLiBBLiBUaGUgQ29tbWlzc2lvbiBzaGFsbCBwcm92aWRlIGVhY2ggcmVwb3J0aW5nIGVudGl0eSB3aXRoIGFuIGFubnVhbCB1cGRhdGUgdG8gdGhlIE1DREIgRGF0YSBTdWJtaXNzaW9uIE1hbnVhbCwgYW5kIGVhY2ggY3VycmVudCBzdWJtaXNzaW9uIHVwZGF0ZSBhdmFpbGFibGUgYXMgc3BlY2lmaWVkIGluIFJlZ3VsYXRpb24gLjE1IG9mIHRoaXMgY2hhcHRlci5CLiBFYWNoIHJlcG9ydGluZyBlbnRpdHkgc2hhbGwgcHJvdmlkZSBlYWNoIG9mIHRoZSBmb2xsb3dpbmcgcmVwb3J0cywgaWYgYXBwbGljYWJsZTouIDEpIFByb2Zlc3Npb25hbCBTZXJ2aWNlcyBEYXRhIFJlcG9ydDsuIDIpIFBoYXJtYWN5IERhdGEgUmVwb3J0Oy4gMykgUHJvdmlkZXIgRGlyZWN0b3J5IFJlcG9ydDsuIDQpIEluc3RpdHV0aW9uYWwgU2VydmljZXMgRGF0YSBSZXBvcnQ7LiBkZAIGD2QWBGYPZBYCZg8VAT08YSBocmVmPWdldGZpbGUuYXNweD9maWxlPTEwLjI1LjA2LjA1Lmh0bT4xMC4yNS4wNi4wNS5odG08L2E+ZAIBDw8WAh8ABewDMTAuMjUuMDYuMDUuIDA1IFRpbWUgUGVyaW9kIGZvciBTdWJtaXR0aW5nIERhdGEgUmVwb3J0cy4uIEEuIEZvciBTZXJ2aWNlcyBSZW5kZXJlZCBpbiBDYWxlbmRhciBZZWFyIDIwMTM6LiAxKSBPbmx5IHRob3NlIHJlcG9ydGluZyBlbnRpdGllcyBkZXNpZ25hdGVkIHVuZGVyIFJlZ3VsYXRpb24gLjAzQSgxKSBvZiB0aGlzIGNoYXB0ZXIgc2hhbGwgc3VibWl0IHRvIHRoZSBDb21taXNzaW9uIGEgY29tcGxldGUgc2V0IG9mIHRoZSBlbnRpdHnigJlzIGRhdGEgZm9yIHRoYXQgcGVyaW9kIGluIHRoZSBmb3JtIGFuZCBmb3JtYXQgZGVzY3JpYmVkIGluIFJlZ3VsYXRpb25zIC4wN+KAlTE0IG9mIHRoaXMgY2hhcHRlciBieSBKdW5lIDMwLCAyMDE0LjIpIFRoZSBzdWJtaXNzaW9uIHNoYWxsIGNvbnNpc3Qgb2YgYWxsIGNsYWltcyBmb3Igc2VydmljZXMgcHJvdmlkZWQgaW4gMjAxMyB0aGF0IGFyZSBhZGp1ZGljYXRlZCBiZXR3ZWVuIEphbnVhcnkgMSwgMjAxMyBhbmQgZGQCBw9kFgRmD2QWAmYPFQE9PGEgaHJlZj1nZXRmaWxlLmFzcHg/ZmlsZT0xMC4yNS4wNi4wNi5odG0+MTAuMjUuMDYuMDYuaHRtPC9hPmQCAQ8PFgIfAAXeAzEwLjI1LjA2LjA2LiAwNiBQcm90ZWN0aW9uIG9mIENvbmZpZGVudGlhbCBJbmZvcm1hdGlvbiBHZW5lcmFsbHkgYW5kIGluIFN1Ym1pc3Npb25zLi4gQS4gRmlsaW5nIERhdGEgVXNpbmcgRW5jcnlwdGlvbi4uIDEpIFRvIGFzc3VyZSB0aGF0IGNvbmZpZGVudGlhbCByZWNvcmRzIG9yIGluZm9ybWF0aW9uIGFyZSBwcm90ZWN0ZWQsIGVhY2ggcmVwb3J0aW5nIGVudGl0eSBzaGFsbCBlbmNyeXB0IGVhY2ggb2YgdGhlIGZvbGxvd2luZyBkYXRhIGVsZW1lbnRzIGluIHN1Y2ggYSBtYW5uZXIgdGhhdCBlYWNoIHVuaXF1ZSB2YWx1ZSBmb3IgYSBkYXRhIGVsZW1lbnQgcHJvZHVjZXMgYW4gaWRlbnRpY2FsIHVuaXF1ZSBlbmNyeXB0ZWQgZGF0YSBlbGVtZW50OmEpIFBhdGllbnQgb3IgZW5yb2xsZWUgaWRlbnRpZmllcjsgYW5kLiBiKSBJbnRlcm5hbCBzdWJzY3JpYmVyIGNvbnRyYWN0IG51bWJlci4uIDIpIEluIG9yZGVyIHRvIG1haW50YWluIGFkZAIID2QWBGYPZBYCZg8VAT08YSBocmVmPWdldGZpbGUuYXNweD9maWxlPTEwLjI1LjA2LjA3Lmh0bT4xMC4yNS4wNi4wNy5odG08L2E+ZAIBDw8WAh8ABfEDMTAuMjUuMDYuMDcuIDA3IFByb2Zlc3Npb25hbCBTZXJ2aWNlcyBEYXRhIFJlcG9ydCBTdWJtaXNzaW9uLi4gQS4gRWFjaCByZXBvcnRpbmcgZW50aXR5IHNoYWxsIHN1Ym1pdCBhIHByb2Zlc3Npb25hbCBzZXJ2aWNlcyBkYXRhIHJlcG9ydCB0aGF0IHByb3ZpZGVzIHRoZSBkYXRhIGZvciBlYWNoIGZlZS1mb3Itc2VydmljZSBhbmQgY2FwaXRhdGVkIGVuY291bnRlciBwcm92aWRlZCBieSBhIGhlYWx0aCBjYXJlIHByYWN0aXRpb25lciBvciBvZmZpY2UgZmFjaWxpdHkuIFRoaXMgcmVwb3J0IHNoYWxsIGluY2x1ZGUgYWxsIGhlYWx0aCBjYXJlIHNlcnZpY2VzIHByb3ZpZGVkOjEpIFRvIGVhY2ggTWFyeWxhbmQgcmVzaWRlbnQgaW5zdXJlZCBieSB0aGF0IGVudGl0eSB1bmRlciBhIGZ1bGx5IGluc3VyZWQgb3IgYSBzZWxmLWluc3VyZWQgY29udHJhY3QyKSBUbyBlYWNoIG5vbi1NYXJ5bGFuZCByZXNpZGVudCBpbnN1cmVkIHVuZGVyIGEgTWFyeWxhbmQgY29udHJhY3QuLiBkZAIJD2QWBGYPZBYCZg8VAT08YSBocmVmPWdldGZpbGUuYXNweD9maWxlPTEwLjI1LjA2LjA4Lmh0bT4xMC4yNS4wNi4wOC5odG08L2E+ZAIBDw8WAh8ABeQDMTAuMjUuMDYuMDguIDA4IFBoYXJtYWN5IERhdGEgUmVwb3J0IFN1Ym1pc3Npb24uLiBBLiBFYWNoIHJlcG9ydGluZyBlbnRpdHkgc2hhbGwgc3VibWl0IGEgcGhhcm1hY3kgZGF0YSByZXBvcnQgZm9yIGVhY2ggcHJlc2NyaXB0aW9uIGRydWcgZW5jb3VudGVyIGZvciBzZXJ2aWNlcyBwcm92aWRlZCBieSBhIHBoYXJtYWN5IGxvY2F0ZWQgaW4gb3Igb3V0IG9mIHRoZSBTdGF0ZS4gVGhpcyByZXBvcnQgc2hhbGwgaW5jbHVkZSBhbGwgcGhhcm1hY3kgc2VydmljZXMgcHJvdmlkZWQgdG8gZWFjaCBNYXJ5bGFuZCByZXNpZGVudCBpbnN1cmVkIHVuZGVyIGEgZnVsbHkgaW5zdXJlZCBjb250cmFjdCBvciBhIHNlbGYtaW5zdXJlZCBjb250cmFjdCwgYW5kIHRvIGVhY2ggbm9uLU1hcnlsYW5kIHJlc2lkZW50IGluc3VyZWQgdW5kZXIgYSBNYXJ5bGFuZCBjb250cmFjdC5CLiBFYWNoIHBoYXJtYWN5IGRhdGEgcmVwb3J0IHNoYWxsIGNvbnRhaW4gdGhlIGluZmRkAgoPZBYEZg9kFgJmDxUBPTxhIGhyZWY9Z2V0ZmlsZS5hc3B4P2ZpbGU9MTAuMjUuMDYuMDkuaHRtPjEwLjI1LjA2LjA5Lmh0bTwvYT5kAgEPDxYCHwAF8gMxMC4yNS4wNi4wOS4gMDkgUHJvdmlkZXIgRGlyZWN0b3J5IFJlcG9ydCBTdWJtaXNzaW9uLi4gQS4gRWFjaCByZXBvcnRpbmcgZW50aXR5IHNoYWxsIHN1Ym1pdCBhIHByb3ZpZGVyIGRpcmVjdG9yeSByZXBvcnQgZGV0YWlsaW5nIGVhY2ggaGVhbHRoIGNhcmUgcHJhY3RpdGlvbmVyIG9yIHN1cHBsaWVyIHRoYXQgcHJvdmlkZWQgc2VydmljZXMgdG8gYW55IGVucm9sbGVlIG9mIHRoYXQgcmVwb3J0aW5nIGVudGl0eSBkdXJpbmcgdGhlIHJlcG9ydGluZyBwZXJpb2QuIFRoaXMgcmVwb3J0IHNoYWxsIGNvbnRhaW4gaW5mb3JtYXRpb24gZm9yIGVhY2ggaW4tU3RhdGUgTWFyeWxhbmQgcHJhY3RpdGlvbmVyIG9yIHN1cHBsaWVyLCBhbmQgZm9yIGVhY2ggb3V0LW9mLVN0YXRlIHByYWN0aXRpb25lciBvciBzdXBwbGllciwgdGhhdCBoYXMgc2VydmVkIGEgTWFyeWxhbmQgcmVzaWRlbnQgb3IgYSBub24tTWFyeWxhbmQgcmVzaWRlbnQgdW5kZXIgYSBNYXJ5bGFuZCBjb250cmFjdC5kZAILD2QWBGYPZBYCZg8VAT08YSBocmVmPWdldGZpbGUuYXNweD9maWxlPTEwLjI1LjA2LjEwLmh0bT4xMC4yNS4wNi4xMC5odG08L2E+ZAIBDw8WAh8ABc4DMTAuMjUuMDYuMTAuIDEwIEluc3RpdHV0aW9uYWwgU2VydmljZXMgRGF0YSBSZXBvcnQgU3VibWlzc2lvbi4uIEEuIEVhY2ggcmVwb3J0aW5nIGVudGl0eSBzaGFsbCBzdWJtaXQgYW4gaW5zdGl0dXRpb25hbCBzZXJ2aWNlcyBkYXRhIHJlcG9ydCB0aGF0IHJlcG9ydHMgYWxsIGluc3RpdHV0aW9uYWwgaGVhbHRoIGNhcmUgc2VydmljZXMgcHJvdmlkZWQgdG8gZWFjaCBNYXJ5bGFuZCByZXNpZGVudCBpbnN1cmVkIHVuZGVyIGEgZnVsbHkgaW5zdXJlZCBjb250cmFjdCBvciBzZWxmLWluc3VyZWQgY29udHJhY3QsIGFuZCBlYWNoIG5vbi1NYXJ5bGFuZCByZXNpZGVudCBpbnN1cmVkIHVuZGVyIGEgTWFyeWxhbmQgY29udHJhY3QsIHdoZXRoZXIgdGhvc2Ugc2VydmljZXMgd2VyZSBwcm92aWRlZDoxKSBCeSBhIGhlYWx0aCBjYXJlIGZhY2lsaXR5IGxvY2F0ZWQgaW4tU3RhdGUgb3Igb3V0LW9mLVN0YXRlOyBvci4gZGQCDA9kFgRmD2QWAmYPFQE9PGEgaHJlZj1nZXRmaWxlLmFzcHg/ZmlsZT0xMC4yNS4wNi4xMS5odG0+MTAuMjUuMDYuMTEuaHRtPC9hPmQCAQ8PFgIfAAXpAzEwLjI1LjA2LjExLiAxMSBFbGlnaWJpbGl0eSBEYXRhIFJlcG9ydCBTdWJtaXNzaW9uLi4gQS4gRWFjaCByZXBvcnRpbmcgZW50aXR5IHNoYWxsIHN1Ym1pdCBhbiBlbGlnaWJpbGl0eSBkYXRhIHJlcG9ydCB0aGF0IHByb3ZpZGVzIGluZm9ybWF0aW9uIG9uIHRoZSBjaGFyYWN0ZXJpc3RpY3Mgb2YgZWFjaCBlbnJvbGxlZSB0aGF0IGlzIGEgTWFyeWxhbmQgcmVzaWRlbnQgaW5zdXJlZCB1bmRlciBhIGZ1bGx5IGluc3VyZWQgY29udHJhY3Qgb3IgYSBzZWxmLWluc3VyZWQgY29udHJhY3QsIGFuZCB0aGF0IGlzIGEgbm9uLU1hcnlsYW5kIHJlc2lkZW50IGluc3VyZWQgdW5kZXIgYSBNYXJ5bGFuZCBjb250cmFjdCBmb3Igc2VydmljZXMgY292ZXJlZCB1bmRlciBlYWNoIHBvbGljeSBvciBjb250cmFjdCBpc3N1ZWQgYnkgdGhlIHJlcG9ydGluZyBlbnRpdHkgdGhhdCBhcmUgc3ViamVjdCB0byB0aGlzIGNoYXB0ZXIuQi4gRWFjaCBlbGlnaWJpbGl0eSBkYXRhIGRkAg0PZBYEZg9kFgJmDxUBPTxhIGhyZWY9Z2V0ZmlsZS5hc3B4P2ZpbGU9MTAuMjUuMDYuMTIuaHRtPjEwLjI1LjA2LjEyLmh0bTwvYT5kAgEPDxYCHwAF+QExMC4yNS4wNi4xMi4gMTIgUGxhbiBCZW5lZml0IERlc2lnbiBSZXBvcnQuLiBFYWNoIHBsYW4gYmVuZWZpdCBkZXNpZ24gcmVwb3J0IHNoYWxsIGNvbnRhaW4gdGhlIGluZm9ybWF0aW9uIHNwZWNpZmllZCBieSB0aGUgQ29tbWlzc2lvbiBpbiBpdHMgYW5udWFsIHVwZGF0ZSB0byB0aGUgTUNEQiBEYXRhIFN1Ym1pc3Npb24gTWFudWFsIGFuZCBiZSBmaWxlZCBpbiBhIGZvcm0gYW5kIG1hbm5lciBzcGVjaWZpZWQgaW4gdGhlIE1hbnVhbC5kZAIOD2QWBGYPZBYCZg8VAT08YSBocmVmPWdldGZpbGUuYXNweD9maWxlPTEwLjI1LjA2LjEzLmh0bT4xMC4yNS4wNi4xMy5odG08L2E+ZAIBDw8WAh8ABekBMTAuMjUuMDYuMTMuIDEzIERlbnRhbCBEYXRhIFJlcG9ydC4uIEVhY2ggZGVudGFsIGRhdGEgcmVwb3J0IHNoYWxsIGNvbnRhaW4gdGhlIGluZm9ybWF0aW9uIHNwZWNpZmllZCBieSB0aGUgQ29tbWlzc2lvbiBpbiBpdHMgYW5udWFsIHVwZGF0ZSB0byB0aGUgTUNEQiBEYXRhIFN1Ym1pc3Npb24gTWFudWFsIGFuZCBiZSBmaWxlZCBpbiBhIGZvcm0gYW5kIG1hbm5lciBzcGVjaWZpZWQgaW4gdGhlIE1hbnVhbC5kZAIPD2QWBGYPZBYCZg8VAT08YSBocmVmPWdldGZpbGUuYXNweD9maWxlPTEwLjI1LjA2LjE0Lmh0bT4xMC4yNS4wNi4xNC5odG08L2E+ZAIBDw8WAh8ABZsCMTAuMjUuMDYuMTQuIDE0IE5vbi1GZWUtZm9yLVNlcnZpY2UgTWVkaWNhbCBFeHBlbnNlcyBSZXBvcnQuLiBFYWNoIE5vbi1GZWUtZm9yLVNlcnZpY2UgTWVkaWNhbCBFeHBlbnNlcyBSZXBvcnQgc2hhbGwgY29udGFpbiB0aGUgaW5mb3JtYXRpb24gc3BlY2lmaWVkIGJ5IHRoZSBDb21taXNzaW9uIGluIGl0cyBhbm51YWwgdXBkYXRlIHRvIHRoZSBNQ0RCIERhdGEgU3VibWlzc2lvbiBNYW51YWwgYW5kIGJlIGZpbGVkIGluIGEgZm9ybSBhbmQgbWFubmVyIHNwZWNpZmllZCBpbiB0aGUgTWFudWFsLmRkAhAPZBYEZg9kFgJmDxUBPTxhIGhyZWY9Z2V0ZmlsZS5hc3B4P2ZpbGU9MTAuMjUuMDYuMTUuaHRtPjEwLjI1LjA2LjE1Lmh0bTwvYT5kAgEPDxYCHwAF5wMxMC4yNS4wNi4xNS4gMTUgUmVwb3J0IFN1Ym1pc3Npb24gTWV0aG9kcy4uIEEuIFdoZW4gYSByZXBvcnRpbmcgZW50aXR5IGNvbGxlY3RzIG1vcmUgZ3JhbnVsYXIgaW5mb3JtYXRpb24gdGhhbiByZXF1aXJlZCBieSB0aGlzIGNoYXB0ZXIsIGl0IHNoYWxsIHByb3ZpZGUgYSBjb252ZXJzaW9uIHRhYmxlIHRoYXQgZGVzY3JpYmVzIGhvdyBpbnRlcm5hbCB2YWx1ZXMgYXJlIG1hcHBlZCB0byBlYWNoIHJlcXVpcmVkIGNhdGVnb3J5LkIuIFRoZSBNQ0RCIERhdGEgU3VibWlzc2lvbiBNYW51YWwgc2hhbGwgY29udGFpbiB0ZWNobmljYWwgc3BlY2lmaWNhdGlvbnMsIGVuY3J5cHRpb24gYWxnb3JpdGhtcywgbGF5b3V0cywgcmVxdWlyZWQgcmVwb3J0cywgYW5kIGRlZmluaXRpb25zIGZvciBlYWNoIHJlcG9ydGluZyBlbnRpdHkuMSkgVGhlIENvbW1pc3Npb24gc2hhbGwgcHJvdmlkZSBhbiBhbm51YWwgTUNEQiBTdWJtaXNzaW9uIE1hbnVhbCBieSBOb3ZlbWJlZGQCEQ9kFgRmD2QWAmYPFQE9PGEgaHJlZj1nZXRmaWxlLmFzcHg/ZmlsZT0xMC4yNS4wNi4xNi5odG0+MTAuMjUuMDYuMTYuaHRtPC9hPmQCAQ8PFgIfAAXcAzEwLjI1LjA2LjE2LiAxNiBSZXF1ZXN0IGZvciBhbiBFeHRlbnNpb24gb2YgVGltZS4uIEEuIEEgcmVwb3J0aW5nIGVudGl0eSBtYXkgcmVxdWVzdCBhbiBleHRlbnNpb24gb2YgYW4gYWRkaXRpb25hbCAzMCBkYXlzIHRpbWUgdG8gcHJvdmlkZSB0aGUgcmVxdWlyZWQgZGF0YSByZXBvcnQuQi4gRm9yIGEgMzAgZGF5IGV4dGVuc2lvbiByZXF1ZXN0IHRvIGJlIGNvbnNpZGVyZWQgYnkgQ29tbWlzc2lvbiBzdGFmZiwgdGhlIHJlcG9ydGluZyBlbnRpdHkgc2hhbGwgc3VibWl0IGEgd3JpdHRlbiByZXF1ZXN0IHRvIHRoZSBFeGVjdXRpdmUgRGlyZWN0b3IgYXQgbGVhc3QgMzAgZGF5cyBiZWZvcmUgdGhlIHF1YXJ0ZXJseSBzdWJtaXNzaW9uIGRhdGUgdGhhdCBpbmNsdWRlczoxKSBUaGUgZXh0cmFvcmRpbmFyeSBjYXVzZSBuZWNlc3NpdGF0aW5nIHRoZSBleHRlbnNpb24gcmVxdWVzdDsgYW5kLiAyKSBBIHByb3Bvc2VkIGRhdGUsIHdoaWNoZGQCEg9kFgRmD2QWAmYPFQE9PGEgaHJlZj1nZXRmaWxlLmFzcHg/ZmlsZT0xMC4yNS4wNi4xNy5odG0+MTAuMjUuMDYuMTcuaHRtPC9hPmQCAQ8PFgIfAAXzAzEwLjI1LjA2LjE3LiAxNyBSZXF1ZXN0IGZvciBhbiBBbm51YWwgV2FpdmVyIG9yIEZvcm1hdCBNb2RpZmljYXRpb24uLiBBLiBBbm51YWwgV2FpdmVyIFJlcXVlc3QuIFdoZW4gYSByZXBvcnRpbmcgZW50aXR5IGlzIG5vdCBhYmxlIHRvIHN1Ym1pdCBhIGRhdGEgcmVwb3J0IGFzIHNldCBmb3J0aCBpbiB0aGlzIGNoYXB0ZXIsIGl0IHNoYWxsIGZpbGUgd2l0aCB0aGUgQ29tbWlzc2lvbiBieSBNYXJjaCAxNSBvZiB0aGUgeWVhciBmb3Igd2hpY2ggYSB3YWl2ZXIgaXMgc291Z2h0IGEgd3JpdHRlbiByZXF1ZXN0IGZvciBhbiBhbm51YWwgd2FpdmVyIHRoYXQgc2hhbGwgaW5jbHVkZToxKSBBbiBleHBsYW5hdGlvbiBvZiB3aHkgdGhlIHJlcG9ydGluZyBlbnRpdHkgaXMgbm90IGFibGUgdG8gcHJvdmlkZSB0aGUgZGF0YSByZXBvcnQsIGluY2x1ZGluZyBhbnkgZXh0cmFvcmRpbmFyeSBjaXJjdW1zdGFuYzIpIEFueSBTdXBwb3J0aW5nIERvY3VtZW50YXRpb24gUmVxdWlyZWQuLiBkZAITD2QWBGYPZBYCZg8VAT08YSBocmVmPWdldGZpbGUuYXNweD9maWxlPTEwLjI1LjA2LjE4Lmh0bT4xMC4yNS4wNi4xOC5odG08L2E+ZAIBDw8WAh8ABaEBMTAuMjUuMDYuMTguIDE4IEZhaWx1cmUgdG8gRmlsZSBEYXRhIFJlcG9ydHMuLiBBIHJlcG9ydGluZyBlbnRpdHkgdGhhdCBkb2VzIG5vdCB0aW1lbHkgZmlsZSBhIGRhdGEgcmVwb3J0IG1heSBiZSBzdWJqZWN0IHRvIHBlbmFsdGllcyBwcm92aWRlZCBpbiBDT01BUiAxMC4yNS4xMi5kZAIUD2QWBGYPZBYCZg8VAT08YSBocmVmPWdldGZpbGUuYXNweD9maWxlPTEwLjI1LjA2LjE5Lmh0bT4xMC4yNS4wNi4xOS5odG08L2E+ZAIBDw8WAh8ABb0CMTAuMjUuMDYuMTkuIDE5IFN1bW1hcmllcyBhbmQgQ29tcGlsYXRpb25zLi4gVGhlIENvbW1pc3Npb24gc2hhbGwgZGV2ZWxvcCBwdWJsaWMtdXNlIGRhdGEsIHN1bW1hcmllcywgYW5kIGNvbXBpbGF0aW9ucyBmb3IgcHVibGljIGRpc2Nsb3N1cmUsIHB1cnN1YW50IHRvIEhlYWx0aC1HZW5lcmFsIEFydGljbGUsIMKnMTktMTAzKGMpMykgMTktMTA5KGEpNikgYW5kIDE5LTEzNCwgQW5ub3RhdGVkIENvZGUgb2YgTWFyeWxhbmQsIGluIGNvbXBsaWFuY2Ugd2l0aCBhbGwgYXBwbGljYWJsZSBmZWRlcmFsIGFuZCBTdGF0ZSBsYXdzIGFuZCByZWd1bGF0aW9ucy5kZAIVD2QWBGYPZBYCZg8VAUE8YSBocmVmPWdldGZpbGUuYXNweD9maWxlPTEwLjI1LjA2Ljk5OTkuaHRtPjEwLjI1LjA2Ljk5OTkuaHRtPC9hPmQCAQ8PFgIfAAW1AzEwLjI1LjA2Ljk5OTkuIEFkbWluaXN0cmF0aXZlIEhpc3RvcnkgRWZmZWN0aXZlIGRhdGU6IEphbnVhcnkgMTUsIDE5OTYgKDIzOjEgTWQuIFIuIDI2KS4gUmVndWxhdGlvbiAuMDYgYW1lbmRlZCBlZmZlY3RpdmUgT2N0b2JlciA3LCAxOTk2ICgyMzoyMCBNZC4gUi4gMTQyMykuIFJlZ3VsYXRpb24gLjEwQSBhbWVuZGVkIGVmZmVjdGl2ZSBPY3RvYmVyIDcsIDE5OTYgKDIzOjIwIE1kLiBSLiAxNDIzKSDigJUuIENoYXB0ZXIgcmV2aXNlZCBlZmZlY3RpdmUgTWFyY2ggOSwgMTk5OCAoMjU6NSBNZC4gUi4gMzY5KS4gUmVndWxhdGlvbiAuMDEtMSBhbWVuZGVkIGVmZmVjdGl2ZSBPY3RvYmVyIDE4LCAxOTk5ICgyNjoyMSBNZC4gUi4gMTYyOSkuIFJlZ3VsYXRpb24gLjAyIGFtZW5kZWQgZWZmZWN0aXZlIE9jdG9iZXIgMTgsIDE5OTkgKDI2OjIxIE1kLiBSLiAxNjI5KS4gZGRkEGg7oneWbzor9UhW9Y2l5xouq4Q=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="854C2B21" />
+<a href="javascript:history.back()"> << Back</a>&nbsp;|&nbsp;<A href="comarhome.html">Return to Main COMAR Search Page</A>
+<center><H2><span id="lblMessage">21 records match your request.</span></h2></center>
+<table cellspacing="0" rules="all" border="1" id="gridResults">
+	<tr>
+		<td>File</td><td>Abstract</td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.00.htm>10.25.06.00.htm</a>
+        </td><td>10.25.06.00. Title 10 MARYLAND DEPARTMENT OF HEALTH Subtitle 25 MARYLAND HEALTH CARE COMMISSION Chapter 06 Maryland Medical Care Data Base and Data Collection Authority: Health-General Article, §19-101, 19-103(c)3) (4) (7) and (8) 19-109(a)1) (6) and (7) 19-133, 19-134, and 19-138, Annotated Code of Maryland</td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.01.htm>10.25.06.01.htm</a>
+        </td><td>10.25.06.01. 01 Scope and Purpose.. These regulations establish appropriate methods for collecting and compiling Statewide data on selected health care services provided either under a Maryland contract or to Maryland residents by health care practitioners and facilities:A. From payors;. B. From third party administrators; and. C. Regarding providers for whom the Maryland Health Care Commission otherwise receives data.. </td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.02.htm>10.25.06.02.htm</a>
+        </td><td>10.25.06.02. 02 Definitions.. A. In this chapter, the following terms have the meanings indicated.. B. Terms Defined.. 1) "Adjudicated" means paid, resolved, or settled.. 2) “Behavioral health services" means mental health services or alcohol and substance abuse services.3) "Capitated encounter" means a health care visit in which a health care practitioner or office facility provides a service pursuant to an agreement with a reporting entity for reimbursement on an aggregate fixed sum or per </td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.03.htm>10.25.06.03.htm</a>
+        </td><td>10.25.06.03. 03 Persons Designated to Provide Data to the Commission.. A. Payors. By December 31 of each year, the Commission shall make available a list of each payor meeting the criteria for designation as a reporting entity and who shall file the reports under this chapter in the following year.1) The Commission shall designate as a reporting entity each payor whose total lives covered exceeds 1,000, as reported to the Maryland Insurance Administration.2) The Commission shall d</td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.04.htm>10.25.06.04.htm</a>
+        </td><td>10.25.06.04. 04 Process for Submitting Data.. A. The Commission shall provide each reporting entity with an annual update to the MCDB Data Submission Manual, and each current submission update available as specified in Regulation .15 of this chapter.B. Each reporting entity shall provide each of the following reports, if applicable:. 1) Professional Services Data Report;. 2) Pharmacy Data Report;. 3) Provider Directory Report;. 4) Institutional Services Data Report;. </td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.05.htm>10.25.06.05.htm</a>
+        </td><td>10.25.06.05. 05 Time Period for Submitting Data Reports.. A. For Services Rendered in Calendar Year 2013:. 1) Only those reporting entities designated under Regulation .03A(1) of this chapter shall submit to the Commission a complete set of the entity’s data for that period in the form and format described in Regulations .07―14 of this chapter by June 30, 2014.2) The submission shall consist of all claims for services provided in 2013 that are adjudicated between January 1, 2013 and </td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.06.htm>10.25.06.06.htm</a>
+        </td><td>10.25.06.06. 06 Protection of Confidential Information Generally and in Submissions.. A. Filing Data Using Encryption.. 1) To assure that confidential records or information are protected, each reporting entity shall encrypt each of the following data elements in such a manner that each unique value for a data element produces an identical unique encrypted data element:a) Patient or enrollee identifier; and. b) Internal subscriber contract number.. 2) In order to maintain a</td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.07.htm>10.25.06.07.htm</a>
+        </td><td>10.25.06.07. 07 Professional Services Data Report Submission.. A. Each reporting entity shall submit a professional services data report that provides the data for each fee-for-service and capitated encounter provided by a health care practitioner or office facility. This report shall include all health care services provided:1) To each Maryland resident insured by that entity under a fully insured or a self-insured contract2) To each non-Maryland resident insured under a Maryland contract.. </td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.08.htm>10.25.06.08.htm</a>
+        </td><td>10.25.06.08. 08 Pharmacy Data Report Submission.. A. Each reporting entity shall submit a pharmacy data report for each prescription drug encounter for services provided by a pharmacy located in or out of the State. This report shall include all pharmacy services provided to each Maryland resident insured under a fully insured contract or a self-insured contract, and to each non-Maryland resident insured under a Maryland contract.B. Each pharmacy data report shall contain the inf</td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.09.htm>10.25.06.09.htm</a>
+        </td><td>10.25.06.09. 09 Provider Directory Report Submission.. A. Each reporting entity shall submit a provider directory report detailing each health care practitioner or supplier that provided services to any enrollee of that reporting entity during the reporting period. This report shall contain information for each in-State Maryland practitioner or supplier, and for each out-of-State practitioner or supplier, that has served a Maryland resident or a non-Maryland resident under a Maryland contract.</td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.10.htm>10.25.06.10.htm</a>
+        </td><td>10.25.06.10. 10 Institutional Services Data Report Submission.. A. Each reporting entity shall submit an institutional services data report that reports all institutional health care services provided to each Maryland resident insured under a fully insured contract or self-insured contract, and each non-Maryland resident insured under a Maryland contract, whether those services were provided:1) By a health care facility located in-State or out-of-State; or. </td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.11.htm>10.25.06.11.htm</a>
+        </td><td>10.25.06.11. 11 Eligibility Data Report Submission.. A. Each reporting entity shall submit an eligibility data report that provides information on the characteristics of each enrollee that is a Maryland resident insured under a fully insured contract or a self-insured contract, and that is a non-Maryland resident insured under a Maryland contract for services covered under each policy or contract issued by the reporting entity that are subject to this chapter.B. Each eligibility data </td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.12.htm>10.25.06.12.htm</a>
+        </td><td>10.25.06.12. 12 Plan Benefit Design Report.. Each plan benefit design report shall contain the information specified by the Commission in its annual update to the MCDB Data Submission Manual and be filed in a form and manner specified in the Manual.</td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.13.htm>10.25.06.13.htm</a>
+        </td><td>10.25.06.13. 13 Dental Data Report.. Each dental data report shall contain the information specified by the Commission in its annual update to the MCDB Data Submission Manual and be filed in a form and manner specified in the Manual.</td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.14.htm>10.25.06.14.htm</a>
+        </td><td>10.25.06.14. 14 Non-Fee-for-Service Medical Expenses Report.. Each Non-Fee-for-Service Medical Expenses Report shall contain the information specified by the Commission in its annual update to the MCDB Data Submission Manual and be filed in a form and manner specified in the Manual.</td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.15.htm>10.25.06.15.htm</a>
+        </td><td>10.25.06.15. 15 Report Submission Methods.. A. When a reporting entity collects more granular information than required by this chapter, it shall provide a conversion table that describes how internal values are mapped to each required category.B. The MCDB Data Submission Manual shall contain technical specifications, encryption algorithms, layouts, required reports, and definitions for each reporting entity.1) The Commission shall provide an annual MCDB Submission Manual by Novembe</td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.16.htm>10.25.06.16.htm</a>
+        </td><td>10.25.06.16. 16 Request for an Extension of Time.. A. A reporting entity may request an extension of an additional 30 days time to provide the required data report.B. For a 30 day extension request to be considered by Commission staff, the reporting entity shall submit a written request to the Executive Director at least 30 days before the quarterly submission date that includes:1) The extraordinary cause necessitating the extension request; and. 2) A proposed date, which</td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.17.htm>10.25.06.17.htm</a>
+        </td><td>10.25.06.17. 17 Request for an Annual Waiver or Format Modification.. A. Annual Waiver Request. When a reporting entity is not able to submit a data report as set forth in this chapter, it shall file with the Commission by March 15 of the year for which a waiver is sought a written request for an annual waiver that shall include:1) An explanation of why the reporting entity is not able to provide the data report, including any extraordinary circumstanc2) Any Supporting Documentation Required.. </td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.18.htm>10.25.06.18.htm</a>
+        </td><td>10.25.06.18. 18 Failure to File Data Reports.. A reporting entity that does not timely file a data report may be subject to penalties provided in COMAR 10.25.12.</td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.19.htm>10.25.06.19.htm</a>
+        </td><td>10.25.06.19. 19 Summaries and Compilations.. The Commission shall develop public-use data, summaries, and compilations for public disclosure, pursuant to Health-General Article, §19-103(c)3) 19-109(a)6) and 19-134, Annotated Code of Maryland, in compliance with all applicable federal and State laws and regulations.</td>
+	</tr><tr>
+		<td>
+            <a href=getfile.aspx?file=10.25.06.9999.htm>10.25.06.9999.htm</a>
+        </td><td>10.25.06.9999. Administrative History Effective date: January 15, 1996 (23:1 Md. R. 26). Regulation .06 amended effective October 7, 1996 (23:20 Md. R. 1423). Regulation .10A amended effective October 7, 1996 (23:20 Md. R. 1423) ―. Chapter revised effective March 9, 1998 (25:5 Md. R. 369). Regulation .01-1 amended effective October 18, 1999 (26:21 Md. R. 1629). Regulation .02 amended effective October 18, 1999 (26:21 Md. R. 1629). </td>
+	</tr>
+</table>
+
+</form>
+<TABLE align="center" border="0" cellspacing="0" style="border-collapse: collapse" width="786">
+</TABLE>
+<a href="javascript:history.back()" id="A1"> << Back</a>&nbsp;|&nbsp;<A href="comar.aspx">Return to Main COMAR Search Page</A>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div id="footer_block" class="clearfix">
+                    <div class="span9">
+                        <div id="footer_left">
+                            <div class="cl_base_hNav footerLinks">
+                                <!-- Step 12: Add agency footer links -->
+                              
+                            </div>
+                            <!-- Step 13 : Add agency address and phone -->
+                            <p><p>16 Francis Street, Annapolis, MD 21401 ~ Phone Number:(410) 974-2486 ~ FAX Number: 410-280-5647<br> Office Hours: 8:00 - 4:30</p>
+                            
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <div id="footer_right" class="clearfix">
+                            <div class="mdgov_socialNav">
+                                <!-- Step 6 : configure footer social media icons and links -->
+                               <!-- <ul class="cl_base_hNav cl_socialNav">
+                                    <li><a href="#" class="sm-facebook" title="Facebook">Facebook</a></li>
+                                    <li><a href="#" class="sm-twitter" title="Twitter">Twitter</a></li>
+                                    <!-- <li><a href="#" class="sm-googleplus" title="Google+">Google Plus</a></li>-->
+                                  <!--  <li><a href="#" class="sm-youtube" title="YouTube">YouTube</a></li>
+                                    <li><a href="#" class="sm-flickr" title="Flickr">Flickr</a></li>
+                                    <li><a href="http://www.maryland.gov/pages/social_media.aspx" class="sm-all" title="MD Social Media Directory">MD Social Media Directory</a></li>
+                                </ul>
+                                <!--if no Agency social media,replace above UL with code below-->
+                                <!--<ul class="cl_base_hNav cl_socialNavDirectory">
+                            		<li><a href="http://www.maryland.gov/pages/social_media.aspx" class="sm-directory" title="MD Social Media Directory">MD Social Media Directory</a></li>
+                        		</ul>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../egov/js/base.js"></script>
+	<script src="../egov/js/g-analytics.js"></script>
+</body>
+</html>
